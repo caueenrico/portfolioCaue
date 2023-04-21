@@ -1,5 +1,5 @@
 import Image from "next/image";
-import perfil from "../assets/perfil.png";
+import perfil from "./";
 import { Header } from "./components/header";
 import {
   ContainerExperiencia,
