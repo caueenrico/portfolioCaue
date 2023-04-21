@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LooperBG from "../../assets/LooperBG.svg";
 import perfil from "../../assets/perfil.png";
 import { Header } from "../components/header";
 import {
@@ -24,6 +25,7 @@ import {
 import { Experiencias } from "../components/experiencia";
 import { Projeto } from "../components/projetos";
 import { Footer } from "../components/footer/footer";
+
 
 export default function Home() {
   return (

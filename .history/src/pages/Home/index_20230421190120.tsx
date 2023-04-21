@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LooperBG from "../../assets/LooperBG.svg";
 import perfil from "../../assets/perfil.png";
 import { Header } from "../components/header";
 import {
