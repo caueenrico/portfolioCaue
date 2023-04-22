@@ -1,6 +1,6 @@
 import Image from "next/image";
 import perfil from "../assets/perfil.png";
-import { Header } from "../components/header";
+import { Header } from "./components/header";
 import {
   ContainerExperiencia,
   ContainerGeral,
@@ -21,9 +21,9 @@ import {
   Download,
   WhatsappLogo,
 } from "phosphor-react";
-import { Experiencias } from "../components/experiencia";
-import { Projeto } from "../components/projetos";
-import { Footer } from "../components/footer/footer";
+import { Experiencias } from "../";
+import { Projeto } from "./components/projetos";
+import { Footer } from "./components/footer/footer";
 
 export default function Home() {
   return (
