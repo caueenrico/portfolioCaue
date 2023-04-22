@@ -11,7 +11,7 @@ import {
   Hero,
   LinkButtons,
   SobreMim,
-} from "../styles/styles";
+} from "../styles";
 import {
   GitCommit,
   GithubLogo,
