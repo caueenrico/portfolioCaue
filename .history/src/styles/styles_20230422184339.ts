@@ -1,5 +1,5 @@
 import { styled } from "@/styles";
-import LooperBG from "../assets/LooperBG.svg";
+import LooperBG from "../assets";
 
 
 export const ContainerGeral = styled("div", {
