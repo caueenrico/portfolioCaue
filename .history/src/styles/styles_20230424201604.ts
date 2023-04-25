@@ -17,7 +17,7 @@ export const ContainerGeral = styled("div", {
 
 export const HeaderContainer = styled("div", {
   width: "100%",
-  height: 100,
+  height: 2,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -29,8 +29,6 @@ export const ContainerHero = styled("div", {
   display: "flex",
   flexDirection: "column",
   width: "100%",
-  height: "100vh",
-  border: "2px solid red",
 });
 
 //animation do header
@@ -51,7 +49,6 @@ export const Hero = styled("div", {
   justifyContent: "space-between",
   width: "100%",
   overflow: "hidden",
-  
 
   "@bp3": {
     display: "flex",
@@ -63,8 +60,8 @@ export const Hero = styled("div", {
     backgroundImage: `url(/LooperBG.svg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
-    padding: "10px 180px",
-    minHeight: "100vh",
+    padding: "55px 180px",
+    minHeight: 400,
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
@@ -271,7 +268,7 @@ export const ContainerProjetos = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   paddingBottom: 120,
-  paddingTop: 100,
+  paddingTop: 120,
 
   width: "100%",
 

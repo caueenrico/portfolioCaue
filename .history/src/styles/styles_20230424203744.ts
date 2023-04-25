@@ -271,7 +271,7 @@ export const ContainerProjetos = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   paddingBottom: 120,
-  paddingTop: 100,
+  paddingTop: 5,
 
   width: "100%",
 

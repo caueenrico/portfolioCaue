@@ -63,6 +63,7 @@ export const Hero = styled("div", {
     backgroundImage: `url(/LooperBG.svg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
+
     padding: "10px 180px",
     minHeight: "100vh",
     display: "flex",
@@ -271,7 +272,7 @@ export const ContainerProjetos = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   paddingBottom: 120,
-  paddingTop: 100,
+  paddingTop: 120,
 
   width: "100%",
 

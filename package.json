@@ -13,6 +13,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "aos": "^3.0.0-beta.6",
     "next": "13.3.0",
     "phosphor-react": "^1.4.1",
     "react": "18.2.0",
@@ -21,6 +22,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.0"
   }

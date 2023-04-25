@@ -28,7 +28,6 @@ import TypewriterComponent from "typewriter-effect";
 import Typewriter from "typewriter-effect";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import { useEffect } from "react";
 
 export default function Home() {
   const nomeType = (
@@ -44,19 +43,14 @@ export default function Home() {
     />
   )
 
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
-
+  
   return (
     <ContainerGeral id="home">
       <HeaderContainer>
         <Header />
       </HeaderContainer>
       <Hero>
-        <div className="caue" data-aos="fade-up"  >
+        <div className="caue">
           <span>Olá, Eu sou</span>
           <h1>
             {nomeType}
@@ -86,11 +80,11 @@ export default function Home() {
           </LinkButtons>
         </div>
       </Hero>
-      <ContainerSobreMim id="sobre" >
-        <div className="containerImg" data-aos="fade-right">
+      <ContainerSobreMim id="sobre">
+        <div className="containerImg">
           <Image src={perfil} alt="eu" />
         </div>
-        <SobreMim data-aos="fade-left">
+        <SobreMim>
           <h1>Sobre Mim</h1>
 
           <h2>Guarujá, São Paulo</h2>
@@ -143,16 +137,14 @@ export default function Home() {
         </SobreMim>
       </ContainerSobreMim>
 
-      <ContainerExperiencia id="experiencia" >
-        <div data-aos='fade-up' >
+      <ContainerExperiencia id="experiencia">
         <Experiencias />
-        </div>
       </ContainerExperiencia>
 
       <ContainerProjetos id="projetos">
-        <h1 data-aos='fade-up'>Projetos</h1>
+        <h1>Projetos</h1>
 
-        <div className="projetos" data-aos='fade-up'>
+        <div className="projetos">
           <Projeto />
           <Projeto />
           <Projeto />

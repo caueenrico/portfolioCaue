@@ -50,8 +50,8 @@ export const Hero = styled("div", {
   alignItems: "center",
   justifyContent: "space-between",
   width: "100%",
-  overflow: "hidden",
   
+  overflow: "hidden",
 
   "@bp3": {
     display: "flex",
@@ -63,8 +63,8 @@ export const Hero = styled("div", {
     backgroundImage: `url(/LooperBG.svg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
-    padding: "10px 180px",
-    minHeight: "100vh",
+    padding: "55px 180px",
+    minHeight: 400,
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
@@ -271,7 +271,7 @@ export const ContainerProjetos = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   paddingBottom: 120,
-  paddingTop: 100,
+  paddingTop: 120,
 
   width: "100%",
 

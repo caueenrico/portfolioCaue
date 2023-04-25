@@ -144,15 +144,13 @@ export default function Home() {
       </ContainerSobreMim>
 
       <ContainerExperiencia id="experiencia" >
-        <div data-aos='fade-up' >
-        <Experiencias />
-        </div>
+        <Experiencias data-aos='fade-up'/>
       </ContainerExperiencia>
 
       <ContainerProjetos id="projetos">
-        <h1 data-aos='fade-up'>Projetos</h1>
+        <h1>Projetos</h1>
 
-        <div className="projetos" data-aos='fade-up'>
+        <div className="projetos">
           <Projeto />
           <Projeto />
           <Projeto />

@@ -85,7 +85,7 @@ export function Experiencias() {
   return (
     <Container id="tete" >
       <h1>Experiências</h1>
-      <DisplayExp id="tetst" >
+      <DisplayExp id="tetst">
         <ButtonsCont>
           <ButtonExp
             funcao={handlePutExp}

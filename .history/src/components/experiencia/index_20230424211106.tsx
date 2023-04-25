@@ -83,9 +83,10 @@ export function Experiencias() {
   }
 
   return (
-    <Container id="tete" >
+    <Container id="tete" data-aos="fade-up"
+                        data-aos-duration="3000">
       <h1>Experiências</h1>
-      <DisplayExp id="tetst" >
+      <DisplayExp id="tetst">
         <ButtonsCont>
           <ButtonExp
             funcao={handlePutExp}
