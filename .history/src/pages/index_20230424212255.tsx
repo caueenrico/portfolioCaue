@@ -56,16 +56,16 @@ export default function Home() {
         <Header />
       </HeaderContainer>
       <Hero>
-        <div className="caue">
-          <span data-aos="fade-up">Olá, Eu sou</span>
-          <h1 data-aos="fade-up">
+        <div className="caue"   >
+          <span>Olá, Eu sou</span>
+          <h1>
             {nomeType}
           </h1>
-          <p data-aos="fade-up">
+          <p>
             Desenvolvedor Front-end <br /> e futuro full-stack
           </p>
 
-          <LinkButtons data-aos="fade-up">
+          <LinkButtons>
             <a
               href="https://www.linkedin.com/in/caue-enrico/"
               target="_blank"

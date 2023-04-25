@@ -61,11 +61,11 @@ export default function Home() {
           <h1 data-aos="fade-up">
             {nomeType}
           </h1>
-          <p data-aos="fade-up">
+          <p>
             Desenvolvedor Front-end <br /> e futuro full-stack
           </p>
 
-          <LinkButtons data-aos="fade-up">
+          <LinkButtons>
             <a
               href="https://www.linkedin.com/in/caue-enrico/"
               target="_blank"

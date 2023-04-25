@@ -65,7 +65,7 @@ export default function Home() {
             Desenvolvedor Front-end <br /> e futuro full-stack
           </p>
 
-          <LinkButtons data-aos="fade-up">
+          <LinkButtons>
             <a
               href="https://www.linkedin.com/in/caue-enrico/"
               target="_blank"
