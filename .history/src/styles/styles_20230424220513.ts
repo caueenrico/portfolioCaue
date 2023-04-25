@@ -64,13 +64,12 @@ export const Hero = styled("div", {
     backgroundImage: `url(/LooperBG.svg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
-    padding: "0 180px",
+    padding: "55px 180px",
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "center",
-    marginTop: -100,
 
     span: {
       fontSize: "1.5rem",

@@ -51,7 +51,6 @@ export const Hero = styled("div", {
   justifyContent: "space-between",
   width: "100%",
   overflow: "hidden",
-
   
 
   "@bp3": {
@@ -64,13 +63,12 @@ export const Hero = styled("div", {
     backgroundImage: `url(/LooperBG.svg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
-    padding: "0 180px",
+    padding: "px 180px",
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "center",
-    marginTop: -100,
 
     span: {
       fontSize: "1.5rem",
@@ -244,7 +242,7 @@ export const SobreMim = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "justify",
-   
+    "data-aos":"fade-up",
 
     ".textoSobre": {
       padding: "0 50px",

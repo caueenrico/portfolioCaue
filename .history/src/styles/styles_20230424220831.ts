@@ -65,6 +65,7 @@ export const Hero = styled("div", {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
     padding: "0 180px",
+    border: "2px solid red",
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
