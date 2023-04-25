@@ -242,7 +242,7 @@ export const SobreMim = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "justify",
-    "data-aos":"fade-up",
+    data-aos="fade-up"
 
     ".textoSobre": {
       padding: "0 50px",

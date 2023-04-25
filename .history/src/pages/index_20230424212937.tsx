@@ -87,8 +87,8 @@ export default function Home() {
         </div>
       </Hero>
       <ContainerSobreMim id="sobre" >
-        <div className="containerImg" >
-          <Image src={perfil} alt="eu" data-aos="fade-rigth" />
+        <div className="containerImg" data-aos="fade-right">
+          <Image src={perfil} alt="eu" />
         </div>
         <SobreMim data-aos="fade-up">
           <h1>Sobre Mim</h1>

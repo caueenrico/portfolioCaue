@@ -65,7 +65,7 @@ export default function Home() {
             Desenvolvedor Front-end <br /> e futuro full-stack
           </p>
 
-          <LinkButtons data-aos="fade-up">
+          <LinkButtons >
             <a
               href="https://www.linkedin.com/in/caue-enrico/"
               target="_blank"
@@ -87,10 +87,10 @@ export default function Home() {
         </div>
       </Hero>
       <ContainerSobreMim id="sobre" >
-        <div className="containerImg" >
-          <Image src={perfil} alt="eu" data-aos="fade-rigth" />
+        <div className="containerImg" data-aos="fade-right">
+          <Image src={perfil} alt="eu" />
         </div>
-        <SobreMim data-aos="fade-up">
+        <SobreMim data-aos="fade-left">
           <h1>Sobre Mim</h1>
 
           <h2>Guarujá, São Paulo</h2>
