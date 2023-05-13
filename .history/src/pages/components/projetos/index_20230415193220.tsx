@@ -1,8 +1,0 @@
-import { ProjetoCont } from "./styles";
-
-export function Projeto(){
-  return(
-    <Pro
-  )
-  
-}

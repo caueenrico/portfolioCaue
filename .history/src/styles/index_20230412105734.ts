@@ -1,1 +1,0 @@
-import { CreateStitches } from "@stitches/react";
