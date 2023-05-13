@@ -173,7 +173,7 @@ export default function Home() {
             onde é possível adicionar e remover itens antes de finalizar a compra. Também tem um
             formulário para o frete e um checkout transparente de fácil entendimento. Ainda não está responsivo, pois o intuito desse projeto era 
             treinar minhas habilidades com as tecnologias abaixo"
-            tecnologias="ReactJS, Styled-Components, Typescript"
+            tecnologias="ReactJS, StyleComponents, Typescript"
             link="https://coffedelivery.vercel.app/"
           />
           <Projeto
