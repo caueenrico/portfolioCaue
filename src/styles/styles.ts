@@ -153,6 +153,7 @@ export const LinkButtons = styled("div", {
       "linear-gradient($dark, $dark) padding-box, linear-gradient(to right, #D24074, #6518B4) border-box",
     color: "$white",
     transition: "0.5s ease-out",
+    
   },
 
   ".gradienteRosa:hover": {
@@ -250,6 +251,18 @@ export const SobreMim = styled("div", {
       padding: "0 50px",
     },
   },
+
+  ".links":{
+    a:{
+      textDecoration: "none",
+      color: "$blue",
+
+      "&:hover":{
+        color: "$white",
+        transition: "0.2s ease-out",
+      }
+    }
+  }
 });
 
 export const ContainerExperiencia = styled("div", {

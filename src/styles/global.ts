@@ -17,8 +17,7 @@ export const globalStyles = globalCss({
     backgroundColor: '$dark',
 
     boxSizing: 'border-box',
-
-   
+ 
     
   },
 

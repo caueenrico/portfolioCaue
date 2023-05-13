@@ -31,17 +31,18 @@ export function Experiencias() {
     if (nomedoButton === "Ultracargo") {
       setActive("Ultracargo");
       setExp({
-        title: "Técnico de Controle e Qualidade operacional",
+        title: "Técnico de Controle e Qualidade Operacional",
         empresa: "Ultracargo",
         periodo: "Jun 2016 - Atual",
         descricao: (
           <p>
             Atualmente como Técnico de Controle e Qualidade Operacional, fico
-            responsável pelas operações marítimas e todos os processos de
-            movimentação de produtos armazenados no terminal no porto de santos
-            em uma das maiores empresas de granéis liquidos do mundo, mantenha a
-            comunicação com a tripulação a bordo em inglês, faços os cálculos de
-            quantidades, conversões e análises físico químicas{" "}
+            responsável pelas operações marítimas no centro de controle
+            operacional e todos os processos de movimentação de produtos
+            armazenados em uma das maiores empresas de granéis liquidos do
+            mundo, mantenho a comunicação com a tripulação a bordo em inglês,
+            faço os cálculos de quantidades, conversões e análises físico
+            químicas{" "}
           </p>
         ),
       });
@@ -83,9 +84,9 @@ export function Experiencias() {
   }
 
   return (
-    <Container id="tete" >
+    <Container id="tete">
       <h1>Experiências</h1>
-      <DisplayExp id="tetst" >
+      <DisplayExp id="tetst">
         <ButtonsCont>
           <ButtonExp
             funcao={handlePutExp}

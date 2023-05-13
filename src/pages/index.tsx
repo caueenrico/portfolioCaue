@@ -38,7 +38,7 @@ export default function Home() {
   const nomeType = (
     <TypewriterComponent
       options={{
-        strings: ["Caue Enrico", "Apaixonado por tecnologia", "Criativo"],
+        strings: ["Caue Enrico","Analista e Desenvolvedor de Sistemas","freelancer"],
         autoStart: true,
         loop: true,
         wrapperClassName: "typewriter",
@@ -99,36 +99,53 @@ export default function Home() {
 
           <div className="textoSobre">
             <p>
-              Sempre fui apaixonado por ciência e tecnologia, o que me levou a
-              obter uma bolsa de 100% para um curso técnico de petróleo e gás
-              durante o ensino médio. Destaquei-me nesse curso e um professor me
+              Sempre fui fascinado por ciências e tecnologias, quando eu era
+              mais novo o meu sonho era ter um laboratório igual ao do meu
+              desenho favorito "Jimmy Neutron". Na escola eu me dava super bem
+              nas aulas de ciências, no ensino médio quando comecei a ter aulas de
+              química eu aprendia com facilidade, e isso me fez até obter uma
+              bolsa de 100% em um colégio particular para um curso técnico de
+              petróleo e gás. Destaquei-me nesse curso e um professor me
               incentivou a seguir a carreira de engenharia química.
             </p>
             <p>
-              No entanto,foi durante a graduação em engenharia química que
-              descobri minha verdadeira paixão pela programação. Fiquei
-              empolgado com as aulas e decidi aprofundar meus conhecimentos na
-              área. Após superar alguns desafios pessoais, decidi seguir meu
-              caminho na tecnologia.
+              No entanto, foi durante a graduação em engenharia química na aula
+              de probabilidade e estatísca que descobri o mundo da programação.
+              Fiquei bem empolgado com as aulas e decidi aprofundar meus
+              conhecimentos na área. Após superar alguns desafios pessoais,
+              decidi seguir meu caminho na tecnologia.
             </p>
             <p>
               Em julho de 2021, mergulhei de cabeça na área de tecnologia ao
-              iniciar o curso de Análise e Desenvolvimento de Sistemas e
-              investir em cursos para aprimorar minhas habilidades como
-              programador front-end.
+              iniciar o curso de Análise e Desenvolvimento de Sistema, inclusive
+              me formo agora em Dezembro de 2023, e comecei a investir em cursos
+              para aprimorar minhas habilidades como programador front-end.
             </p>
             <p>
               Considero-me resiliente e dedicado, com habilidades de trabalho em
-              equipe bem desenvolvidas. Fico entusiasmado em aprender novas
-              tecnologias e estou sempre em busca de aprimoramento
+              equipe bem desenvolvidas. Atualmente sou freelancer, desenvolvo
+              sites pessoais e e-commerce. Estudo focado em ReactJS, NextJS,
+              TypeScript, Stiches, Wordpress(e-commerce)
             </p>
           </div>
 
-          <div>
-            <YoutubeLogo size={32} />
-            <InstagramLogo size={32} />
+          <div className="links">
+            <a
+              href="https://www.youtube.com/channel/UCC7FQUeSTKgj7kNlLQyznNw"
+              target="_blank"
+            >
+              <YoutubeLogo size={32} />
+            </a>
+            <a href="https://www.instagram.com/caueenrico.dev/" target="_blank">
+              <InstagramLogo size={32} />
+            </a>
+            <a href="https://www.linkedin.com/in/caue-enrico/" target="_blank">
             <LinkedinLogo size={32} />
+            </a>
+
+            <a href="https://github.com/caueenrico" target="_blank">
             <GithubLogo size={32} />
+            </a>
           </div>
 
           <LinkButtons>
@@ -143,6 +160,7 @@ export default function Home() {
 
             <a
               href="https://wa.me/message/DALDHTPD7YKUD1"
+              target="_blank"
               className="gradienteRosa"
             >
               <WhatsappLogo size={24} />
@@ -210,8 +228,6 @@ export default function Home() {
             link="https://todochallenge.vercel.app/"
           />
         </div>
-
-     
       </ContainerProjetos>
       <Footer />
     </ContainerGeral>
