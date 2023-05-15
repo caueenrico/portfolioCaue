@@ -262,6 +262,38 @@ export const SobreMim = styled("div", {
         transition: "0.2s ease-out",
       }
     }
+  },
+
+  ".formacoes":{
+    display: "flex",
+    flexDirection: "column",
+
+    h2:{
+      fontSize: "1.20rem",
+      marginBottom: -30,
+    },
+
+    ul:{
+      listStyle: "none",
+      padding: 0,
+      margin: 0,
+      marginTop: 10,
+      color: "$graylight",
+
+      li:{
+        marginBottom: 5,
+        display: "flex",
+        alignItems: "center",
+        gap: 10,
+      }
+    },
+
+    img:{
+      border: 'none',
+      height: 22,
+      width: 22,
+    }
+
   }
 });
 

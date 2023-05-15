@@ -1,5 +1,8 @@
 import Image from "next/image";
 import perfil from "../assets/perfil.png";
+import medalmilitary from "../assets/medal-military.svg";
+import code from "../assets/code.svg";
+import flask from "../assets/flask.svg";
 import { Header } from "../components/header";
 import {
   ContainerExperiencia,
@@ -20,6 +23,9 @@ import {
   YoutubeLogo,
   Download,
   WhatsappLogo,
+  Medal,
+  Code,
+  Flask,
 } from "phosphor-react";
 import { Experiencias } from "../components/experiencia";
 import { Projeto } from "../components/projetos";
@@ -38,7 +44,11 @@ export default function Home() {
   const nomeType = (
     <TypewriterComponent
       options={{
-        strings: ["Caue Enrico","Analista e Desenvolvedor de Sistemas","freelancer"],
+        strings: [
+          "Caue Enrico",
+         
+          "freelancer",
+        ],
         autoStart: true,
         loop: true,
         wrapperClassName: "typewriter",
@@ -102,8 +112,8 @@ export default function Home() {
               Sempre fui fascinado por ciências e tecnologias, quando eu era
               mais novo o meu sonho era ter um laboratório igual ao do meu
               desenho favorito "Jimmy Neutron". Na escola eu me dava super bem
-              nas aulas de ciências, no ensino médio quando comecei a ter aulas de
-              química eu aprendia com facilidade, e isso me fez até obter uma
+              nas aulas de ciências, no ensino médio quando comecei a ter aulas
+              de química eu aprendia com facilidade, e isso me fez até obter uma
               bolsa de 100% em um colégio particular para um curso técnico de
               petróleo e gás. Destaquei-me nesse curso e um professor me
               incentivou a seguir a carreira de engenharia química.
@@ -127,6 +137,25 @@ export default function Home() {
               sites pessoais e e-commerce. Estudo focado em ReactJS, NextJS,
               TypeScript, Stiches, Wordpress(e-commerce)
             </p>
+
+            <div className="formacoes">
+              <h2>Formações Acadêmicas</h2>
+              <ul>
+                <li>
+                  <Image src={code} alt="" />
+                  Análise e desenvolvimento de sistemas - Formação prevista para
+                  Dez 2023
+                </li>
+                <li>
+                  <Image src={medalmilitary} alt="" /> Aspirante-a-oficial/R2 -
+                  Formado em 2016
+                </li>
+                <li>
+                  <Image src={flask} alt="" />Técnico em Petróleo e Gás - Formado em
+                  2014
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="links">
@@ -140,11 +169,11 @@ export default function Home() {
               <InstagramLogo size={32} />
             </a>
             <a href="https://www.linkedin.com/in/caue-enrico/" target="_blank">
-            <LinkedinLogo size={32} />
+              <LinkedinLogo size={32} />
             </a>
 
             <a href="https://github.com/caueenrico" target="_blank">
-            <GithubLogo size={32} />
+              <GithubLogo size={32} />
             </a>
           </div>
 
@@ -211,19 +240,14 @@ export default function Home() {
           <Projeto
             img={dashGo}
             nomeDoProjeto="DashGo"
-            descricao="Um protótipo de Dashboard para visualização de gráficos de
-             um sistema específico. O projeto inclui a funcionalidade de adicionar usuários, 
-             formulários com validações e automação, oferecendo uma experiência completa e 
-             intuitiva para o usuário. Um dos meu primeiros projetos utilizando NextJS"
+            descricao="Um protótipo de Dashboard para visualização de gráficos de um sistema específico. O projeto inclui a funcionalidade de adicionar usuários, formulários com validações e automação, oferecendo uma experiência completa e intuitiva para o usuário. Um dos meu primeiros projetos utilizando NextJS"
             tecnologias="NextJs,Typescript, ChakraUI"
             link="https://dashgo-wine.vercel.app/dashboard"
           />
           <Projeto
             img={todolist}
             nomeDoProjeto="ToDo List"
-            descricao="O famoso ''To Do list'', esse aqui foi um dos meu primeiros projetos que fiz
-            utilizando ReactJS + Css aqui apliquei os primeiros conceitos de Estados, Imutabilidade do estado,
-            listas, chaves, propriedades e componentização."
+            descricao="O famoso ''To Do list'', esse aqui foi um dos meu primeiros projetos que fiz utilizando ReactJS + Css aqui apliquei os primeiros conceitos de Estados, Imutabilidade do estado, listas, chaves, propriedades e componentização."
             tecnologias="ReactJS, Css, TypeScript"
             link="https://todochallenge.vercel.app/"
           />

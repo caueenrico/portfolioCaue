@@ -16,11 +16,11 @@ export function Experiencias() {
     descricao: (
       <p>
         Atualmente como Técnico de Controle e Qualidade Operacional, fico
-        responsável pelas operações marítimas e todos os processos de
-        movimentação de produtos armazenados no terminal no porto de santos em
-        uma das maiores empresas de granéis liquidos do mundo, mantenha a
-        comunicação com a tripulação a bordo em inglês, faços os cálculos de
-        quantidades, conversões e análises físico químicas{" "}
+        responsável pelas operações marítimas no centro de controle operacional
+        e todos os processos de movimentação de produtos armazenados em uma das
+        maiores empresas de granéis liquidos do mundo, mantenho a comunicação
+        com a tripulação a bordo em inglês, faço os cálculos de quantidades,
+        conversões e análises físico químicas{" "}
       </p>
     ),
   });
@@ -55,7 +55,7 @@ export function Experiencias() {
         descricao: (
           <p>
             Fui aprovado no concurso para aluno oficial do exército
-            brasileiro.Passar neste concurso para mim foi uma grande vitória na
+            brasileiro. Passar neste concurso para mim, foi uma grande vitória na
             época, me formei aspirante a oficial temporário da arma de
             infantaria. Pude vivenciar na "pele" o trabalho em equipe, a força,
             o espirito de liderança, estratégia e patriotismo.{" "}

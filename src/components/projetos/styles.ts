@@ -55,7 +55,7 @@ export const ProjetoCont = styled('div',{
     '@bp3':{
       fontSize: '1.5rem',
       width: '80%',
-      textAlign: 'initial'
+      textAlign: 'justify',
     }
   },
 
