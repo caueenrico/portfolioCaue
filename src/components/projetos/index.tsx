@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { ProjetoCont } from "./styles";
 
-import coffedeli from '../../assets/coffedeli.png'
-import dashGo from '../../assets/dashGo.png'
-import { LinkBreak, LinkSimple } from "phosphor-react";
+import { LinkSimple } from "phosphor-react";
 
 type ProjetoProps = {
   img: any,
@@ -16,10 +14,11 @@ type ProjetoProps = {
 export function Projeto({img , nomeDoProjeto, descricao, tecnologias, link}: ProjetoProps) {
   return (
     <ProjetoCont id="jlkj">
-      
-      <Image src={img} alt="coffe"/>
-   
 
+      <a href={link} className="linkimage" target="_blank"> 
+      <Image src={img} alt="coffe"/>
+      </a>
+      
       <h1>{nomeDoProjeto}</h1>
 
       <p>
@@ -28,7 +27,7 @@ export function Projeto({img , nomeDoProjeto, descricao, tecnologias, link}: Pro
 
       <span>Tecnologias usadas no projeto: {tecnologias} </span>
 
-      <a href={link} target="_blank"> <LinkSimple size={24}/> Visualizar</a>
+      <a className="buttonLink" href={link} target="_blank"> <LinkSimple size={24}/> Visualizar</a>
     </ProjetoCont>
   
   );

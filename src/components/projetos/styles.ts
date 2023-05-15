@@ -3,13 +3,33 @@ import { styled } from "@/styles";
 export const ProjetoCont = styled('div',{
   display: 'flex',
   flexDirection: 'column',
+
+  '.linkimage':{
+    textDecoration: 'none',
+    border: 'none',
+    height: 200,
+    width: 530,
+    padding: 0,
+    marginBottom: 40,
+    backgroundColor: 'transparent',
+  
+
+    '@bp3':{
+      width: '95%',
+      height: 200,
+      '&:hover':{
+      textDecoration: 'none',
+      transform: 'none'
+      }
+    }
+  },
   
   img:{
     height: 200,
     width: 530,
     borderLeft: '8px solid $blue',
     borderRadius: 5,
-    marginBottom: 40,
+    
     transition: '0.5s ease-out',
 
     '&:hover':{
@@ -69,7 +89,7 @@ export const ProjetoCont = styled('div',{
     }
   },
 
-  a:{
+  '.buttonLink':{
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
