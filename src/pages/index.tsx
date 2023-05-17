@@ -180,7 +180,7 @@ export default function Home() {
           <LinkButtons>
             <a
               href={"/curriculo.pdf"}
-              download={"meu curriculo"}
+              download={"Caue Curriculo"}
               className="gradienteAzul"
             >
               <Download size={32} />
