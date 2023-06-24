@@ -44,11 +44,7 @@ export default function Home() {
   const nomeType = (
     <TypewriterComponent
       options={{
-        strings: [
-          "Caue Enrico",
-         
-          "freelancer",
-        ],
+        strings: ["Caue Enrico", "freelancer"],
         autoStart: true,
         loop: true,
         wrapperClassName: "typewriter",
@@ -109,27 +105,15 @@ export default function Home() {
 
           <div className="textoSobre">
             <p>
-              Sempre fui fascinado por ciências e tecnologias, quando eu era
-              mais novo o meu sonho era ter um laboratório igual ao do meu
-              desenho favorito "Jimmy Neutron". Na escola eu me dava super bem
-              nas aulas de ciências, no ensino médio quando comecei a ter aulas
-              de química eu aprendia com facilidade, e isso me fez até obter uma
-              bolsa de 100% em um colégio particular para um curso técnico de
-              petróleo e gás. Destaquei-me nesse curso e um professor me
-              incentivou a seguir a carreira de engenharia química.
-            </p>
-            <p>
-              No entanto, foi durante a graduação em engenharia química na aula
-              de probabilidade e estatísca que descobri o mundo da programação.
-              Fiquei bem empolgado com as aulas e decidi aprofundar meus
-              conhecimentos na área. Após superar alguns desafios pessoais,
-              decidi seguir meu caminho na tecnologia.
-            </p>
-            <p>
-              Em julho de 2021, mergulhei de cabeça na área de tecnologia ao
-              iniciar o curso de Análise e Desenvolvimento de Sistema, inclusive
-              me formo agora em Dezembro de 2023, e comecei a investir em cursos
-              para aprimorar minhas habilidades como programador front-end.
+              Sou um desenvolvedor Front-end altamente motivado, dedicado a
+              aprimorar minhas habilidades e conhecimentos na área de
+              tecnologia.<br/>Com quase 3 anos de experiência em estudo e prática,
+              estou me formando em Análise e Desenvolvimento de Sistemas, o que
+              me proporcionou uma base sólida em conceitos de programação e
+              desenvolvimento de software.<br/>Tenho uma paixão por criar interfaces
+              que sejam tanto visualmente atraentes quanto altamente funcionais.
+              Acredito que uma experiência do usuário bem projetada é
+              fundamental para o sucesso de qualquer aplicativo ou website
             </p>
             <p>
               Considero-me resiliente e dedicado, com habilidades de trabalho em
@@ -151,8 +135,8 @@ export default function Home() {
                   Formado em 2016
                 </li>
                 <li>
-                  <Image src={flask} alt="" />Técnico em Petróleo e Gás - Formado em
-                  2014
+                  <Image src={flask} alt="" />
+                  Técnico em Petróleo e Gás - Formado em 2014
                 </li>
               </ul>
             </div>
