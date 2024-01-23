@@ -7,33 +7,34 @@ export const ProjetoCont = styled('div',{
   '.linkimage':{
     textDecoration: 'none',
     border: 'none',
-    height: 200,
-    width: 530,
+    
+    
     padding: 0,
-    marginBottom: 40,
+    marginBottom: -150,
     backgroundColor: 'transparent',
   
 
     '@bp3':{
-      width: '95%',
+      marginBottom: 100,
+      width: '85%',
       height: 200,
       '&:hover':{
       textDecoration: 'none',
-      transform: 'none'
+      transform: 'none',
+      gap:0
       }
     }
   },
   
   img:{
-    height: 200,
-    width: 530,
-    borderLeft: '8px solid $blue',
-    borderRadius: 5,
+    height: 550,
+    width: 550,
+  
     
     transition: '0.5s ease-out',
 
     '&:hover':{
-      borderLeft: '8px solid #9358F7',
+      // borderLeft: '8px solid #9358F7',
       //fazer ele dar zoom na imagem
       '-webkit-transform': 'scale(1.1)',
       '-ms-transform': 'scale(1.1)',
@@ -42,11 +43,10 @@ export const ProjetoCont = styled('div',{
 
     },
 
-    '@bp3':{
-      '&:hover':{
-      borderLeft: '8px solid #9358F7',
-      transform: 'none'
-      }
+    '@bp2':{
+      height: 50,
+      width: 50,
+      
     }
   },
 
@@ -73,9 +73,9 @@ export const ProjetoCont = styled('div',{
     textAlign: 'justify',
 
     '@bp3':{
-      fontSize: '1.5rem',
-      width: '80%',
-      textAlign: 'justify',
+      fontSize: '1.2rem',
+      width: '85%',
+      textAlign: 'left',
     }
   },
 
@@ -85,7 +85,8 @@ export const ProjetoCont = styled('div',{
 
     '@bp3':{
       fontSize: '1rem',
-      
+      width: '85%',
+      textAlign: 'left',
     }
   },
 
@@ -120,7 +121,7 @@ export const ProjetoCont = styled('div',{
    
     img:{
       width: '60%',
-      height: 200,
+      height: 350,
     },
 
   },
@@ -128,7 +129,7 @@ export const ProjetoCont = styled('div',{
   '@cel1':{
     img:{
       width: '95%',
-      height: 200,
+      height: 350,
     },
   },
 

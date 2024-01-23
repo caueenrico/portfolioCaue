@@ -236,7 +236,8 @@ export const SobreMim = styled("div", {
   ".textoSobre": {
     display: "flex",
     flexDirection: "column",
-    gap: 0,
+    gap: "10px",
+  
   },
 
   "@bp3": {
@@ -244,11 +245,17 @@ export const SobreMim = styled("div", {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    textAlign: "justify",
+    textAlign: "left",
    
 
     ".textoSobre": {
+      display: "flex",
+      
       padding: "0 50px",
+      textAlign: "inherit",
+      flexDirection: "column",
+      gap: "10px",
+      width: "80%"
     },
   },
 

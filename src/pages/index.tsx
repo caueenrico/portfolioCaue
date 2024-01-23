@@ -35,10 +35,10 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 
-import dashGo from "../assets/dashGo.png";
-import todolist from "../assets/todolist.png";
-import coffedelivery from "../assets/coffedeli.png";
-import gitblog from "../assets/gitBlog.png";
+import dashGo from "../assets/4.png";
+import todolist from "../assets/3.png";
+import coffedelivery from "../assets/1.png";
+import gitblog from "../assets/2.png";
 
 export default function Home() {
   const nomeType = (
@@ -105,21 +105,21 @@ export default function Home() {
 
           <div className="textoSobre">
             <p>
-              Sou um desenvolvedor Front-end altamente motivado, dedicado a
-              aprimorar minhas habilidades e conhecimentos na área de
-              tecnologia.<br/>Com quase 3 anos de experiência em estudo e prática,
-              estou me formando em Análise e Desenvolvimento de Sistemas, o que
-              me proporcionou uma base sólida em conceitos de programação e
-              desenvolvimento de software.<br/>Tenho uma paixão por criar interfaces
-              que sejam tanto visualmente atraentes quanto altamente funcionais.
-              Acredito que uma experiência do usuário bem projetada é
-              fundamental para o sucesso de qualquer aplicativo ou website
+              <b>Sou formado em Análise e Desenvolvimento de Sistemas pela
+              Faculdade Anhembi Morumbi</b> e tenho formação complementar em
+              Desenvolvimento Full-stack.
             </p>
             <p>
-              Considero-me resiliente e dedicado, com habilidades de trabalho em
-              equipe bem desenvolvidas. Atualmente sou freelancer, desenvolvo
-              sites pessoais e e-commerce. Estudo focado em ReactJS, NextJS,
-              TypeScript, Stiches, Wordpress(e-commerce)
+              <b>Tenho experiência como desenvolvedor freelancer, atuando
+              principalmente como front-end</b>, desenvolvendo sites pessoais,
+              institucionais e e-commerce. No meu dia a dia, utilizo ReactJS,
+              NextJS, NodeJS, SQLite, TypeScript, Stitches, Wordpress
+              (e-commerce), WooCommerce e Elementor.
+            </p>
+            <p>
+              <b>Meu objetivo é trabalhar como desenvolvedor Front-end ou Back-end,</b>
+              colaborando em projetos, aprendendo muito com outros
+              desenvolvedores e gerando valor para a empresa e pessoas.
             </p>
 
             <div className="formacoes">
@@ -127,8 +127,7 @@ export default function Home() {
               <ul>
                 <li>
                   <Image src={code} alt="" />
-                  Análise e desenvolvimento de sistemas - Formação prevista para
-                  Dez 2023
+                  Análise e desenvolvimento de sistemas - Formado em 2023
                 </li>
                 <li>
                   <Image src={medalmilitary} alt="" /> Aspirante-a-oficial/R2 -
