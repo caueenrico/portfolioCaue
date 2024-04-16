@@ -16,7 +16,7 @@ export function MenuMobile({ menuIsVisible, closeMenu }: MenuMobileProps) {
       <nav>
         <a href="#home">Home</a>
         <a href="#sobre">Sobre mim</a>
-        <a href="#experiencia">Experiência</a>
+        {/* <a href="#experiencia">Experiência</a> */}
         <a href="#projetos">Projetos</a>
       </nav>
     </Container>

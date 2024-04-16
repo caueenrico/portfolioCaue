@@ -1,5 +1,5 @@
 import Image from "next/image";
-import perfil from "../assets/perfil.png";
+import perfil2 from "../assets/perfil2.png";
 import medalmilitary from "../assets/medal-military.svg";
 import code from "../assets/code.svg";
 import flask from "../assets/flask.svg";
@@ -70,7 +70,9 @@ export default function Home() {
           <span data-aos="fade-up">Olá, Eu sou</span>
           <h1 data-aos="fade-up">{nomeType}</h1>
           <p data-aos="fade-up">
-            Desenvolvedor Front-end <br /> e futuro full-stack
+            <span className="atenção">
+              melhoro o seu negócio com tecnologia
+            </span>
           </p>
 
           <LinkButtons data-aos="fade-up">
@@ -84,19 +86,19 @@ export default function Home() {
             </a>
 
             <a
-              href="https://github.com/caueenrico"
+              href="https://wa.me/message/DALDHTPD7YKUD1"
               target="_blank"
               className="gradienteRosa"
             >
-              <GithubLogo size={24} />
-              GitHub
+              <WhatsappLogo size={24} />
+              WhatsApp
             </a>
           </LinkButtons>
         </div>
       </Hero>
       <ContainerSobreMim id="sobre">
         <div className="containerImg">
-          <Image src={perfil} alt="eu" data-aos="fade-rigth" />
+          <Image src={perfil2} alt="eu" data-aos="fade-rigth" />
         </div>
         <SobreMim data-aos="fade-up">
           <h1>Sobre Mim</h1>
@@ -105,21 +107,31 @@ export default function Home() {
 
           <div className="textoSobre">
             <p>
-              <b>Sou formado em Análise e Desenvolvimento de Sistemas pela
-              Faculdade Anhembi Morumbi</b> e tenho formação complementar em
-              Desenvolvimento Full-stack.
+              <b>Sou graduado em Análise e Desenvolvimento de Sistemas</b> pela
+              renomada Faculdade Anhembi Morumbi, com uma sólida formação
+              complementar em Desenvolvimento Full-stack.
             </p>
             <p>
-              <b>Tenho experiência como desenvolvedor freelancer, atuando
-              principalmente como front-end</b>, desenvolvendo sites pessoais,
-              institucionais e e-commerce. No meu dia a dia, utilizo ReactJS,
-              NextJS, NodeJS, SQLite, TypeScript, Stitches, Wordpress
-              (e-commerce), WooCommerce e Elementor.
+              No meu dia a dia,{" "}
+              <b>
+                sou responsável por conceber e desenvolver uma variedade de
+                soluções digitais
+              </b>
+              , incluindo sistemas personalizados, websites pessoais,
+              institucionais e plataformas de e-commerce, <b>atendendo às
+              necessidades de empresas de diversos portes</b>, desde pequenos
+              empreendimentos até grandes corporações.
             </p>
-            <p>
+            {/* <p>
               <b>Meu objetivo é trabalhar como desenvolvedor Front-end ou Back-end,</b>
               colaborando em projetos, aprendendo muito com outros
               desenvolvedores e gerando valor para a empresa e pessoas.
+            </p> */}
+            <p>
+              <b>Tenho uma verdadeira paixão por desafios e pela busca incessante
+              por inovação.</b> Sempre comprometido em oferecer as melhores
+              soluções, utilizo as tecnologias mais avançadas e eficazes para
+              resolver qualquer problema que se apresente.
             </p>
 
             <div className="formacoes">
@@ -161,14 +173,14 @@ export default function Home() {
           </div>
 
           <LinkButtons>
-            <a
+            {/* <a
               href={"/curriculo.pdf"}
               download={"Caue Curriculo"}
               className="gradienteAzul"
             >
               <Download size={32} />
               Curriculo
-            </a>
+            </a> */}
 
             <a
               href="https://wa.me/message/DALDHTPD7YKUD1"
@@ -182,11 +194,11 @@ export default function Home() {
         </SobreMim>
       </ContainerSobreMim>
 
-      <ContainerExperiencia id="experiencia">
+      {/* <ContainerExperiencia id="experiencia">
         <div data-aos="fade-up">
           <Experiencias />
         </div>
-      </ContainerExperiencia>
+      </ContainerExperiencia> */}
 
       <ContainerProjetos id="projetos">
         <h1 data-aos="fade-up">Projetos</h1>

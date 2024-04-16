@@ -110,6 +110,10 @@ export const Hero = styled("div", {
       textTransform: "uppercase",
     },
 
+    '.atenção': {
+      color: ""
+    },
+
     "@bp3": {
       padding: "55px 20px",
     },
@@ -120,6 +124,7 @@ export const LinkButtons = styled("div", {
   marginTop: 31,
   display: "flex",
   gap: 24,
+  
 
   ".gradienteAzul": {
     display: "flex",
@@ -196,10 +201,14 @@ export const ContainerSobreMim = styled("div", {
   },
 
   img: {
-    borderLeft: "5px solid $blue",
-    borderRadius: 3,
-    width: 300,
-    height: 300,
+    zIndex: 1,
+    display:'flex',
+    alignItems: 'center',
+
+    
+    padding: 0,
+    height: 550,
+    width: 500,
   },
 
   "@cel1": {},
@@ -321,7 +330,7 @@ export const ContainerExperiencia = styled("div", {
 });
 
 export const ContainerProjetos = styled("div", {
-  background: "$dark200",
+  background: "$dark",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
