@@ -1,34 +1,38 @@
 import Image from "next/image";
 import { ProjetoCont } from "./styles";
-
-import { LinkSimple } from "phosphor-react";
+import { ArrowRight } from "phosphor-react";
 
 type ProjetoProps = {
-  img: any,
-  nomeDoProjeto: string,
-  descricao: string,
-  tecnologias: string,
-  link: string
-}
+  img: any;
+  label?: string;
+  nomeDoProjeto: string;
+  descricao: string;
+  tecnologias: string[];
+  link: string;
+};
 
-export function Projeto({img , nomeDoProjeto, descricao, tecnologias, link}: ProjetoProps) {
+export function Projeto({ img, label = "Projeto", nomeDoProjeto, descricao, tecnologias, link }: ProjetoProps) {
   return (
-    <ProjetoCont id="jlkj">
-
-      <a href={link} className="linkimage" target="_blank"> 
-      <Image src={img} alt="coffe"/>
+    <ProjetoCont>
+      <a href={link} target="_blank" rel="noopener noreferrer" className="imageWrap">
+        <Image src={img} alt={nomeDoProjeto} fill style={{ objectFit: 'cover' }} />
       </a>
-      
-      <h1>{nomeDoProjeto}</h1>
 
-      <p>
-        {descricao}
-      </p>
+      <div className="cardBody">
+        <span className="projectLabel">{label}</span>
+        <h2>{nomeDoProjeto}</h2>
+        <p>{descricao}</p>
 
-      <span>Tecnologias usadas no projeto: {tecnologias} </span>
+        <div className="techRow">
+          {tecnologias.map((t) => (
+            <span key={t} className="tech">{t}</span>
+          ))}
+        </div>
 
-      <a className="buttonLink" href={link} target="_blank"> <LinkSimple size={24}/> Visualizar</a>
+        <a className="projectLink" href={link} target="_blank" rel="noopener noreferrer">
+          Ver projeto <ArrowRight size={14} weight="bold" />
+        </a>
+      </div>
     </ProjetoCont>
-  
   );
 }
