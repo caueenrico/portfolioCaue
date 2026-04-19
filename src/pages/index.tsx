@@ -1,254 +1,304 @@
 import Image from "next/image";
-import perfil2 from "../assets/perfil2.png";
-import medalmilitary from "../assets/medal-military.svg";
-import code from "../assets/code.svg";
-import flask from "../assets/flask.svg";
-import { Header } from "../components/header";
-import {
-  ContainerExperiencia,
-  ContainerGeral,
-  ContainerHero,
-  ContainerProjetos,
-  ContainerSobreMim,
-  HeaderContainer,
-  Hero,
-  LinkButtons,
-  SobreMim,
-} from "../styles/styles";
-import {
-  GitCommit,
-  GithubLogo,
-  InstagramLogo,
-  LinkedinLogo,
-  YoutubeLogo,
-  Download,
-  WhatsappLogo,
-  Medal,
-  Code,
-  Flask,
-} from "phosphor-react";
-import { Experiencias } from "../components/experiencia";
-import { Projeto } from "../components/projetos";
-import { Footer } from "../components/footer/footer";
-import TypewriterComponent from "typewriter-effect";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import dashGo from "../assets/4.png";
-import todolist from "../assets/3.png";
-import coffedelivery from "../assets/1.png";
-import gitblog from "../assets/2.png";
+import { Header } from "../components/header";
+import { Experiencias } from "../components/experiencia";
+import { Capacidades } from "../components/capacidades";
+import { Certificados } from "../components/certificados";
+import { Footer } from "../components/footer/footer";
+
+import {
+  PageWrapper,
+  HeroSection,
+  CTARow,
+  AboutSection,
+  ValueCard,
+  SectionWrapper,
+  EducationContactSection,
+} from "../styles/styles";
+
+import portrait from "../assets/Retrato profissional com toque futurista.png";
+
+import {
+  LinkedinLogo,
+  GithubLogo,
+  EnvelopeSimple,
+  WhatsappLogo,
+} from "phosphor-react";
 
 export default function Home() {
-  const nomeType = (
-    <TypewriterComponent
-      options={{
-        strings: ["Caue Enrico", "freelancer"],
-        autoStart: true,
-        loop: true,
-        wrapperClassName: "typewriter",
-        // cursorClassName: "typewriter",
-        cursor: " ",
-      }}
-    />
-  );
-
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
+    AOS.init({ duration: 700, once: true, easing: 'ease-out' });
   }, []);
 
   return (
-    <ContainerGeral id="home">
-      <HeaderContainer>
-        <Header />
-      </HeaderContainer>
-      <Hero>
-        <div className="caue">
-          <span data-aos="fade-up">Olá, Eu sou</span>
-          <h1 data-aos="fade-up">{nomeType}</h1>
-          <p data-aos="fade-up">
-            <span className="atenção">
-              melhoro o seu negócio com tecnologia
-            </span>
-          </p>
+    <PageWrapper id="home">
+      <Header />
 
-          <LinkButtons data-aos="fade-up">
-            <a
-              href="https://www.linkedin.com/in/caue-enrico/"
-              target="_blank"
-              className="gradienteAzul"
-            >
-              <LinkedinLogo size={24} />
-              LinkedIn
-            </a>
+      {/* ─── HERO ─────────────────────────────────────────────────────── */}
+      <HeroSection>
+        <div className="scanLine" aria-hidden="true" />
+        <div className="heroInner">
+          <div className="heroLeft">
+            <h1 className="heroTitle">
+              Arquiteto de<br />
+              <span className="accent">Software</span>
+            </h1>
 
-            <a
-              href="https://wa.me/message/DALDHTPD7YKUD1"
-              target="_blank"
-              className="gradienteRosa"
-            >
-              <WhatsappLogo size={24} />
-              WhatsApp
-            </a>
-          </LinkButtons>
+            <p className="heroRole">Cauê Enrico · Guarujá, SP</p>
+
+            <p className="heroDesc">
+              Projetando sistemas que escalam. Integrando tecnologia com propósito de negócio.
+              De arquitetura e cloud à entrega em produção, com mão na massa e visão sistêmica.
+            </p>
+
+            <div className="techBadgeRow">
+              {['.NET 8', 'Node.js', 'Python', 'React', 'Angular', 'Azure DevOps', 'AWS', 'Docker', 'SAP PI/PO'].map((t) => (
+                <span key={t} className="techBadge">{t}</span>
+              ))}
+            </div>
+
+            <CTARow>
+              <a
+                href="https://www.linkedin.com/in/caue-enrico/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ctaPrimary"
+              >
+                <LinkedinLogo size={18} weight="fill" />
+                LinkedIn
+              </a>
+
+              <a
+                href="https://wa.me/5513991648306"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ctaSecondary"
+              >
+                <WhatsappLogo size={18} />
+                WhatsApp
+              </a>
+
+              {/* Adicione o arquivo curriculo.pdf em /public para habilitar este botão */}
+              <a
+                href="https://github.com/caueenrico"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ctaSecondary"
+              >
+                <GithubLogo size={18} />
+                GitHub
+              </a>
+            </CTARow>
+          </div>
+
+          <div className="heroRight">
+            <div style={{ position: 'relative' }}>
+              <div className="portraitRing" aria-hidden="true" />
+              <div className="portraitRing2" aria-hidden="true" />
+              <div className="portraitFrame">
+                <Image
+                  src={portrait}
+                  alt="Cauê Enrico — Arquiteto de Software"
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </Hero>
-      <ContainerSobreMim id="sobre">
-        <div className="containerImg">
-          <Image src={perfil2} alt="eu" data-aos="fade-rigth" />
-        </div>
-        <SobreMim data-aos="fade-up">
-          <h1>Sobre Mim</h1>
+      </HeroSection>
 
-          <h2>Guarujá, São Paulo</h2>
-
-          <div className="textoSobre">
-            <p>
-              <b>Sou graduado em Análise e Desenvolvimento de Sistemas</b> pela
-              renomada Faculdade Anhembi Morumbi, com uma sólida formação
-              complementar em Desenvolvimento Full-stack.
-            </p>
-            <p>
-              No meu dia a dia,{" "}
-              <b>
-                sou responsável por conceber e desenvolver uma variedade de
-                soluções digitais
-              </b>
-              , incluindo sistemas personalizados, websites pessoais,
-              institucionais e plataformas de e-commerce, <b>atendendo às
-              necessidades de empresas de diversos portes</b>, desde pequenos
-              empreendimentos até grandes corporações.
-            </p>
-            {/* <p>
-              <b>Meu objetivo é trabalhar como desenvolvedor Front-end ou Back-end,</b>
-              colaborando em projetos, aprendendo muito com outros
-              desenvolvedores e gerando valor para a empresa e pessoas.
-            </p> */}
-            <p>
-              <b>Tenho uma verdadeira paixão por desafios e pela busca incessante
-              por inovação.</b> Sempre comprometido em oferecer as melhores
-              soluções, utilizo as tecnologias mais avançadas e eficazes para
-              resolver qualquer problema que se apresente.
+      {/* ─── SOBRE / PROPOSTA DE VALOR ────────────────────────────────── */}
+      <AboutSection id="sobre">
+        <div className="aboutInner">
+          <div className="aboutLeft" data-aos="fade-up">
+            <span className="sectionLabel">Sobre</span>
+            <h2>Quem projeta,<br />também entrega.</h2>
+            <p className="aboutDesc">
+              Sou <span className="highlight">Analista de Sistemas na Ultracargo</span> com foco em arquitetura de soluções e desenvolvimento de software. Participo das principais iniciativas tecnológicas da empresa, desde a concepção da arquitetura até a sustentação dos sistemas em produção.
+              <br /><br />
+              Antes de entrar para o desenvolvimento, trabalhei por anos diretamente na operação portuária da Ultracargo. Essa vivência operacional ainda influencia como leio requisitos e como conecto decisões técnicas ao contexto real do negócio.
+              <br /><br />
+              No lado técnico, trabalho com <span className="highlight">.NET, Node.js, Python, React e Angular</span>. Na parte de arquitetura, projeto soluções orientadas a eventos usando SQS, aplico padrões como CQRS e Outbox para garantir consistência e resiliência, e estruturo serviços na AWS com EC2, S3, CloudFront e Cognito. Pipelines CI/CD com Azure DevOps e conteinerização com Docker fazem parte do dia a dia.
             </p>
 
-            <div className="formacoes">
-              <h2>Formações Acadêmicas</h2>
-              <ul>
-                <li>
-                  <Image src={code} alt="" />
-                  Análise e desenvolvimento de sistemas - Formado em 2023
-                </li>
-                <li>
-                  <Image src={medalmilitary} alt="" /> Aspirante-a-oficial/R2 -
-                  Formado em 2016
-                </li>
-                <li>
-                  <Image src={flask} alt="" />
-                  Técnico em Petróleo e Gás - Formado em 2014
-                </li>
-              </ul>
+            <div className="recognitionBadge">
+              <span className="badgeIcon">★</span>
+              <div className="badgeText">
+                <span className="badgeTitle">Reconhecido pela Ultracargo em 2024</span>
+                <span className="badgeSub">Projeto de IA para prevenção de fraudes em terminais portuários</span>
+              </div>
             </div>
           </div>
 
-          <div className="links">
-            <a
-              href="https://www.youtube.com/channel/UCC7FQUeSTKgj7kNlLQyznNw"
-              target="_blank"
-            >
-              <YoutubeLogo size={32} />
-            </a>
-            <a href="https://www.instagram.com/caueenrico.dev/" target="_blank">
-              <InstagramLogo size={32} />
-            </a>
-            <a href="https://www.linkedin.com/in/caue-enrico/" target="_blank">
-              <LinkedinLogo size={32} />
-            </a>
+          <div className="aboutRight" data-aos="fade-up" data-aos-delay="100">
+            <ValueCard>
+              <div className="cardTop">
+                <span className="cardIcon">⬡</span>
+                <span className="cardTitle">Arquitetura de Soluções</span>
+              </div>
+              <p className="cardDesc">
+                Definição de arquitetura, escolha de tecnologias, organização de microsserviços e fluxos de integração, sempre alinhado a boas práticas de segurança e escalabilidade.
+              </p>
+            </ValueCard>
 
-            <a href="https://github.com/caueenrico" target="_blank">
-              <GithubLogo size={32} />
-            </a>
+            <ValueCard>
+              <div className="cardTop">
+                <span className="cardIcon">△</span>
+                <span className="cardTitle">Cloud & DevOps</span>
+              </div>
+              <p className="cardDesc">
+                Pipelines CI/CD com Azure DevOps, deploy em AWS e Azure, conteinerização com Docker e sustentação de aplicações em produção, da build ao hotfix.
+              </p>
+            </ValueCard>
+
+            <ValueCard>
+              <div className="cardTop">
+                <span className="cardIcon">⊕</span>
+                <span className="cardTitle">Visão de Negócio</span>
+              </div>
+              <p className="cardDesc">
+                Background operacional em logística portuária que permite traduzir demandas das áreas de negócio em soluções técnicas precisas, viáveis e sustentáveis.
+              </p>
+            </ValueCard>
           </div>
+        </div>
+      </AboutSection>
 
-          <LinkButtons>
-            {/* <a
-              href={"/curriculo.pdf"}
-              download={"Caue Curriculo"}
-              className="gradienteAzul"
-            >
-              <Download size={32} />
-              Curriculo
-            </a> */}
-
-            <a
-              href="https://wa.me/message/DALDHTPD7YKUD1"
-              target="_blank"
-              className="gradienteRosa"
-            >
-              <WhatsappLogo size={24} />
-              WhatsApp
-            </a>
-          </LinkButtons>
-        </SobreMim>
-      </ContainerSobreMim>
-
-      {/* <ContainerExperiencia id="experiencia">
+      {/* ─── TRAJETÓRIA ───────────────────────────────────────────────── */}
+      <SectionWrapper id="experiencia" tone="base">
         <div data-aos="fade-up">
           <Experiencias />
         </div>
-      </ContainerExperiencia> */}
+      </SectionWrapper>
 
-      <ContainerProjetos id="projetos">
-        <h1 data-aos="fade-up">Projetos</h1>
-
-        <div className="projetos" data-aos="fade-up">
-          <Projeto
-            img={coffedelivery}
-            nomeDoProjeto="CoffeDelivey"
-            descricao="Este é um site completo para uma loja especializada em cafés, 
-            com uma ampla variedade de opções disponíveis. Uma aplicação completa, 
-            o site oferece uma experiência de compra online fácil e conveniente, 
-            com um catálogo completo que apresenta todas as opções de café disponíveis. 
-            Além disso, a plataforma oferece um carrinho de compras seguro e eficiente, 
-            onde é possível adicionar e remover itens antes de finalizar a compra. Também tem um
-            formulário para o frete e um checkout transparente de fácil entendimento. Ainda não está responsivo, pois o intuito desse projeto era 
-            treinar minhas habilidades com as tecnologias abaixo"
-            tecnologias="ReactJS, Styled-Components, Typescript"
-            link="https://coffedelivery.vercel.app/"
-          />
-          <Projeto
-            img={gitblog}
-            nomeDoProjeto="GitBlog"
-            descricao="Uma das aplicações mais legais que ja fiz, um blog inovador 
-            que utiliza a API do GitHub para criar automaticamente miniaturas de 
-            postagens e páginas estilizadas a partir de issues criadas. A aplicação 
-            também exibe informações relevantes, como número de comentários e dados do 
-            usuário, como descrição e número de seguidores. Além disso, possui uma barra 
-            de pesquisa para buscar conteúdo relacionado. É um projeto desafiador e completo 
-            que demonstra habilidades avançadas de desenvolvimento de front-end.
-            "
-            tecnologias="ReactJS, Styled-Components, TypeScript"
-            link="https://git-blog-sigma.vercel.app/"
-          />
-          <Projeto
-            img={dashGo}
-            nomeDoProjeto="DashGo"
-            descricao="Um protótipo de Dashboard para visualização de gráficos de um sistema específico. O projeto inclui a funcionalidade de adicionar usuários, formulários com validações e automação, oferecendo uma experiência completa e intuitiva para o usuário. Um dos meu primeiros projetos utilizando NextJS"
-            tecnologias="NextJs,Typescript, ChakraUI"
-            link="https://dashgo-wine.vercel.app/dashboard"
-          />
-          <Projeto
-            img={todolist}
-            nomeDoProjeto="ToDo List"
-            descricao="O famoso ''To Do list'', esse aqui foi um dos meu primeiros projetos que fiz utilizando ReactJS + Css aqui apliquei os primeiros conceitos de Estados, Imutabilidade do estado, listas, chaves, propriedades e componentização."
-            tecnologias="ReactJS, Css, TypeScript"
-            link="https://todochallenge.vercel.app/"
-          />
+      {/* ─── CAPACIDADES ──────────────────────────────────────────────── */}
+      <SectionWrapper id="capacidades" tone="alt">
+        <div data-aos="fade-up">
+          <Capacidades />
         </div>
-      </ContainerProjetos>
+      </SectionWrapper>
+
+      {/* ─── PROJETOS (oculto temporariamente) ───────────────────────── */}
+      {/* Habilite esta seção quando tiver projetos corporativos para exibir */}
+
+      {/* ─── FORMAÇÃO & CONTATO ───────────────────────────────────────── */}
+      <EducationContactSection id="contato">
+        <div className="eduContactInner">
+          {/* Formação */}
+          <div data-aos="fade-up">
+            <span className="sectionLabel">Formação</span>
+            <h2>Educação &<br />Certificações</h2>
+
+            <ul className="eduList">
+              <li>
+                <span className="eduDegree">Análise e Desenvolvimento de Sistemas</span>
+                <span className="eduInst">Universidade Anhembi Morumbi</span>
+                <span className="eduYear">2021 — 2023</span>
+              </li>
+              <li>
+                <span className="eduDegree">Academia SAP S/4HANA</span>
+                <span className="eduInst">Ka Solution</span>
+                <span className="eduYear">2024</span>
+              </li>
+              <li>
+                <span className="eduDegree">Especialização Full Stack</span>
+                <span className="eduInst">Rocketseat · Ignite & Explorer</span>
+                <span className="eduYear">2022 — 2023</span>
+              </li>
+            </ul>
+
+            <div className="certsBlock">
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginTop: 36, marginBottom: 20 }}>
+                <span className="sectionLabel" style={{ display: 'block', marginBottom: 0 }}>
+                  Certificados
+                </span>
+                <span style={{
+                  fontFamily: "'DM Mono', monospace",
+                  fontSize: '0.68rem',
+                  color: '#5C5C70',
+                  letterSpacing: '0.05em',
+                }}>
+                  +25 extracurriculares
+                </span>
+              </div>
+              <Certificados />
+            </div>
+          </div>
+
+          {/* Contato */}
+          <div className="contactBlock" data-aos="fade-up" data-aos-delay="100">
+            <span className="sectionLabel">Contato</span>
+            <h2>Vamos construir<br />algo juntos?</h2>
+
+            <div className="contactLinks">
+              <a
+                href="https://www.linkedin.com/in/caue-enrico/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contactItem"
+              >
+                <span className="itemIcon">
+                  <LinkedinLogo size={18} color="#E8A838" />
+                </span>
+                <div className="itemText">
+                  <span className="itemLabel">LinkedIn</span>
+                  <span className="itemValue">linkedin.com/in/caue-enrico</span>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/5513991648306"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contactItem"
+              >
+                <span className="itemIcon">
+                  <WhatsappLogo size={18} color="#E8A838" />
+                </span>
+                <div className="itemText">
+                  <span className="itemLabel">WhatsApp</span>
+                  <span className="itemValue">(13) 99164-8306</span>
+                </div>
+              </a>
+
+              <a
+                href="mailto:caueenrico@gmail.com"
+                className="contactItem"
+              >
+                <span className="itemIcon">
+                  <EnvelopeSimple size={18} color="#E8A838" />
+                </span>
+                <div className="itemText">
+                  <span className="itemLabel">E-mail</span>
+                  <span className="itemValue">caueenrico@gmail.com</span>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/caueenrico"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contactItem"
+              >
+                <span className="itemIcon">
+                  <GithubLogo size={18} color="#E8A838" />
+                </span>
+                <div className="itemText">
+                  <span className="itemLabel">GitHub</span>
+                  <span className="itemValue">github.com/caueenrico</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </EducationContactSection>
+
       <Footer />
-    </ContainerGeral>
+    </PageWrapper>
   );
 }

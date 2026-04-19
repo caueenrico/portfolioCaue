@@ -1,142 +1,109 @@
 import { styled } from "@/styles";
 
-export const ProjetoCont = styled('div',{
+export const ProjetoCont = styled('div', {
   display: 'flex',
   flexDirection: 'column',
+  background: '#10111E',
+  borderRadius: 14,
+  border: '1px solid rgba(255, 255, 255, 0.06)',
+  overflow: 'hidden',
+  transition: 'border-color 0.3s ease, transform 0.25s ease',
 
-  '.linkimage':{
-    textDecoration: 'none',
-    border: 'none',
-    
-    
-    padding: 0,
-    marginBottom: -150,
-    backgroundColor: 'transparent',
-  
-
-    '@bp3':{
-      marginBottom: 100,
-      width: '85%',
-      height: 200,
-      '&:hover':{
-      textDecoration: 'none',
-      transform: 'none',
-      gap:0
-      }
-    }
-  },
-  
-  img:{
-    height: 550,
-    width: 550,
-  
-    
-    transition: '0.5s ease-out',
-
-    '&:hover':{
-      // borderLeft: '8px solid #9358F7',
-      //fazer ele dar zoom na imagem
-      '-webkit-transform': 'scale(1.1)',
-      '-ms-transform': 'scale(1.1)',
-      transform: 'scale(1.1)',
-      opacity: 0.8,
-
-    },
-
-    '@bp2':{
-      height: 50,
-      width: 50,
-      
-    }
+  '&:hover': {
+    borderColor: 'rgba(232, 168, 56, 0.2)',
+    transform: 'translateY(-3px)',
   },
 
-  h1:{
-    textTransform: 'none',
-    fontWeight: 500,
-    marginBottom: 30,
-    textAlign: 'left',
+  '.imageWrap': {
+    position: 'relative',
+    overflow: 'hidden',
+    height: 200,
+    background: '#0A0B14',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
 
-    '@bp3':{
-      fontSize: '1.5rem',
+    img: {
       width: '100%',
-      textAlign: 'center',
-      marginTop: 0,
-    }
+      height: '100%',
+      objectFit: 'cover',
+      transition: 'transform 0.5s ease, opacity 0.3s ease',
+      opacity: 0.85,
+    },
 
-
+    '&:hover img': {
+      transform: 'scale(1.05)',
+      opacity: 1,
+    },
   },
 
-  p:{
-    width: 550,
-    color: '$graylight',
-    marginBottom:26,
-    textAlign: 'justify',
+  '.cardBody': {
+    padding: '24px 28px 28px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12,
+    flex: 1,
 
-    '@bp3':{
-      fontSize: '1.2rem',
-      width: '85%',
-      textAlign: 'left',
-    }
+    '@cel1': {
+      padding: '20px 20px 24px',
+    },
   },
 
-  span:{
-    color: '$blue',
-    marginBottom:26,
-
-    '@bp3':{
-      fontSize: '1rem',
-      width: '85%',
-      textAlign: 'left',
-    }
+  '.projectLabel': {
+    fontFamily: "'DM Mono', monospace",
+    fontSize: '0.65rem',
+    color: '#E8A838',
+    letterSpacing: '0.15em',
+    textTransform: 'uppercase',
   },
 
-  '.buttonLink':{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 16,
-    fontWeight: 600,
-    textDecoration: "none",
-    borderRadius: "5px",
-    width: 160,
-    height: 45,
-    border: "3px solid transparent",
-    background:
-      "linear-gradient($dark, $dark) padding-box, linear-gradient(to right, #9358F7, #10D7E2) border-box",
-    color: "$white",
-    transition: "0.5s ease-out",
-
-    '&:hover':{
-      background: "linear-gradient(to right, #9358F7, #10D7E2) border-box",
-      color: "$dark",
-      fontWeight: 600,
-    }
+  h2: {
+    fontFamily: "'Syne', sans-serif",
+    fontSize: '1.2rem',
+    fontWeight: 700,
+    color: '#F0F0F5',
+    lineHeight: 1.2,
+    letterSpacing: '-0.2px',
   },
 
-  '@bp3':{
-    width: '100%',
+  p: {
+    fontFamily: "'DM Sans', sans-serif",
+    fontSize: '0.875rem',
+    color: '#9090A8',
+    lineHeight: 1.75,
+    flex: 1,
+  },
+
+  '.techRow': {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 6,
+    marginTop: 4,
+  },
+
+  '.tech': {
+    fontFamily: "'DM Mono', monospace",
+    fontSize: '0.65rem',
+    color: '#6C6C80',
+    background: 'rgba(255, 255, 255, 0.04)',
+    border: '1px solid rgba(255, 255, 255, 0.07)',
+    padding: '3px 8px',
+    borderRadius: 5,
+  },
+
+  '.projectLink': {
+    display: 'inline-flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-   
-    img:{
-      width: '60%',
-      height: 350,
-    },
+    gap: 8,
+    fontFamily: "'DM Sans', sans-serif",
+    fontWeight: 600,
+    fontSize: '0.82rem',
+    textDecoration: 'none',
+    color: '#E8A838',
+    marginTop: 8,
+    transition: 'gap 0.2s ease',
+    width: 'fit-content',
 
-  },
-
-  '@cel1':{
-    img:{
-      width: '95%',
-      height: 350,
+    '&:hover': {
+      gap: 12,
     },
   },
-
-
-
-  
-
-
-})
-
+});

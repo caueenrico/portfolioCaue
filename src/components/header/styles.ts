@@ -1,95 +1,83 @@
 import { styled } from "@/styles";
 
-export const ContHeader = styled('header',{
-  display: "flex",
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  // border: '2px solid blue',
-  width: '100%',
-  height: 100,
+export const ContHeader = styled('header', {
   position: 'fixed',
-  zIndex: 5,
+  top: 0,
+  left: 0,
+  right: 0,
+  zIndex: 100,
 
-  h1:{
-    color: '$blue'
-  },
-
-  nav:{
-    display: 'flex',
-    gap: 20,
-
-    "@bp3":{
-      display: 'none'
-    },
-  },
-
-  button: {
-    display:'flex',
-    alignItems: 'center',
-    padding: 5,
-    border: 'none',
-    background: 'transparent',
-    
-    '@bp1':{
-      display: 'none'
-    },
-    "@bp3":{
-      
-    },
-  },
-
-
-
-  a:{
-    textDecoration: 'none',
-    fontSize: 18,
-    fontWeight: 500,
-    color:'$graylight',
-    transition: '0.5s',
-  },
-
-  'a:hover': {
-    color:'$blue'
-  },
-
-  div:{
+  '.inner': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: '100%',
-    
-    padding: '30px 180px',
-    borderBottom: '2px solid $dark200',
-    background: '$dark',
+    padding: '0 80px',
+    height: 72,
+    background: 'rgba(0, 0, 0, 0.7)',
+    backdropFilter: 'blur(16px)',
+    '-webkit-backdrop-filter': 'blur(16px)',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+    transition: 'border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease',
 
-    '@bp3':{
-      padding: '30px 40px',
-
-    }
-
-
-
+    '@bp3': {
+      padding: '0 28px',
+    },
   },
 
-  '.noBorder':{
-
-    boxShadow: '0 4px 4px rgba(0,0,0,.3)'
+  '&.scrolled .inner': {
+    background: 'rgba(0, 0, 0, 0.95)',
+    borderBottomColor: 'rgba(232, 168, 56, 0.12)',
+    boxShadow: '0 4px 32px rgba(0, 0, 0, 0.5)',
   },
 
+  '.logo': {
+    fontFamily: "'Syne', sans-serif",
+    fontWeight: 800,
+    fontSize: '1.35rem',
+    color: '#E8A838',
+    textDecoration: 'none',
+    letterSpacing: '-0.5px',
+    transition: 'opacity 0.2s ease',
 
-
-  '@bp3':{
-
-    // border: '2px solid $blue',
-    
-   
-
-   
+    '&:hover': {
+      opacity: 0.8,
+    },
   },
 
+  nav: {
+    display: 'flex',
+    gap: 36,
+    alignItems: 'center',
 
+    '@bp3': {
+      display: 'none',
+    },
+  },
 
+  'nav a': {
+    fontFamily: "'DM Sans', sans-serif",
+    textDecoration: 'none',
+    fontSize: '0.875rem',
+    fontWeight: 500,
+    color: 'rgba(240, 240, 245, 0.55)',
+    transition: 'color 0.2s ease',
+    letterSpacing: '0.01em',
+  },
 
-  
-  
-})
+  'nav a:hover': {
+    color: '#E8A838',
+  },
+
+  '.menuBtn': {
+    display: 'none',
+    alignItems: 'center',
+    padding: '6px',
+    border: 'none',
+    background: 'transparent',
+    cursor: 'pointer',
+
+    '@bp3': {
+      display: 'flex',
+    },
+  },
+});

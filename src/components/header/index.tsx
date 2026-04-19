@@ -1,54 +1,43 @@
 import { useEffect, useState } from "react";
 import { ContHeader } from "./styles";
-import { Hamburger, List } from "phosphor-react";
+import { List } from "phosphor-react";
 import { MenuMobile } from "../menuMobile";
 
 export function Header() {
-  const [noBorder, setNoBorder] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   useEffect(() => {
-    function posicaoScroll() {
-      if (window.scrollY > 10) {
-        setNoBorder(true);
-      } else {
-        setNoBorder(false);
-      }
+    function handleScroll() {
+      setScrolled(window.scrollY > 20);
     }
-
-    window.addEventListener("scroll", posicaoScroll);
-  });
-
-  console.log(noBorder);
-
-  function handleMenu() {
-    setMenuIsVisible(!menuIsVisible);
-  }
-
-  function closeMenu() {
-    setMenuIsVisible(false);
-  }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-    <MenuMobile menuIsVisible={menuIsVisible} closeMenu={closeMenu}/>
-    <ContHeader className="mobile">
-      <div className={noBorder ? 'noBorder' : ' '}>
-        <h1> CE. </h1>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        closeMenu={() => setMenuIsVisible(false)}
+      />
+      <ContHeader className={scrolled ? "scrolled" : ""}>
+        <div className="inner">
+          <a href="#home" className="logo">CE.</a>
 
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#sobre">Sobre mim</a>
-          <a href="#experiencia">Experiência</a>
-          <a href="#projetos">Projetos</a>
-        </nav>
+          <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Trajetória</a>
+            <a href="#capacidades">Capacidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+          </nav>
 
-        <button onClick={ handleMenu }>
-          <List size={32} color="#00D2DF" />
-        </button>
-      </div>
-
-    </ContHeader>
+          <button className="menuBtn" onClick={() => setMenuIsVisible(!menuIsVisible)}>
+            <List size={22} color="#E8A838" />
+          </button>
+        </div>
+      </ContHeader>
     </>
   );
 }
