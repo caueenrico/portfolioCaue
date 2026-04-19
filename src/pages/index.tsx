@@ -261,7 +261,7 @@ export default function Home() {
                 <span className="eduYear">2021 — 2023</span>
               </li>
               <li>
-                <span className="eduDegree">Academia SAP S/4HANA</span>
+                <span className="eduDegree">Academia SAP S/4HANA ABAP</span>
                 <span className="eduInst">Ka Solution</span>
                 <span className="eduYear">2024</span>
               </li>
