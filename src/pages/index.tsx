@@ -229,8 +229,8 @@ export default function Home() {
         </div>
       </AboutSection>
 
-      {/* ─── ARQUITETURA EM AÇÃO ───────────────────────────────────────── */}
-      <Arquitetura />
+      {/* ─── ARQUITETURA EM AÇÃO (oculto temporariamente) ────────────── */}
+      {/* <Arquitetura /> */}
 
       {/* ─── TRAJETÓRIA ───────────────────────────────────────────────── */}
       <SectionWrapper id="experiencia" tone="base">

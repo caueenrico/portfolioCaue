@@ -45,7 +45,7 @@ export function Header() {
             <a href="#sobre">Sobre</a>
             <a href="#experiencia">Trajetória</a>
             <a href="#capacidades">Capacidades</a>
-            <a href="#arquitetura">Arquitetura</a>
+            {/* <a href="#arquitetura">Arquitetura</a> */}
             <a href="#contato">Contato</a>
           </nav>
 
