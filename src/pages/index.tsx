@@ -7,7 +7,9 @@ import { Header } from "../components/header";
 import { Experiencias } from "../components/experiencia";
 import { Capacidades } from "../components/capacidades";
 import { Certificados } from "../components/certificados";
+import { Arquitetura } from "../components/arquitetura";
 import { Footer } from "../components/footer/footer";
+import { useEasterEggs } from "../components/easterEggs/useEasterEggs";
 
 import {
   PageWrapper,
@@ -28,14 +30,72 @@ import {
   WhatsappLogo,
 } from "phosphor-react";
 
+const PARTICLES = [
+  { text: '01100', top: '12%', left: '8%', size: 8, delay: 0 },
+  { text: 'async', top: '25%', left: '85%', size: 9, delay: 5 },
+  { text: '10011', top: '45%', left: '92%', size: 7, delay: 12 },
+  { text: 'deploy', top: '60%', left: '5%', size: 8, delay: 18 },
+  { text: '11010', top: '78%', left: '88%', size: 7, delay: 8 },
+  { text: 'lambda', top: '35%', left: '3%', size: 9, delay: 25 },
+  { text: '00101', top: '85%', left: '15%', size: 8, delay: 32 },
+  { text: 'event', top: '15%', left: '78%', size: 8, delay: 40 },
+  { text: '10110', top: '55%', left: '12%', size: 7, delay: 15 },
+  { text: 'queue', top: '70%', left: '82%', size: 9, delay: 22 },
+];
+
 export default function Home() {
+  useEasterEggs();
+
   useEffect(() => {
     AOS.init({ duration: 700, once: true, easing: 'ease-out' });
   }, []);
 
   return (
-    <PageWrapper id="home">
-      <Header />
+    <>
+      {/* Tesseract Grid Background */}
+      <div id="tesseract-grid" aria-hidden="true">
+        <div className="grid-plane" />
+      </div>
+
+      {/* Floating Data Particles */}
+      {PARTICLES.map((p, i) => (
+        <span
+          key={i}
+          className="data-particle"
+          aria-hidden="true"
+          style={{
+            top: p.top,
+            left: p.left,
+            fontSize: p.size,
+            animation: `float-drift-${i % 3} ${35 + i * 3}s linear infinite`,
+            animationDelay: `${p.delay}s`,
+            opacity: 0.12 + (i % 3) * 0.05,
+          }}
+        >
+          {p.text}
+        </span>
+      ))}
+
+      <style jsx global>{`
+        @keyframes float-drift-0 {
+          0%, 100% { transform: translate(0, 0) rotate(0deg); }
+          25% { transform: translate(15px, -20px) rotate(2deg); }
+          50% { transform: translate(-10px, 10px) rotate(-1deg); }
+          75% { transform: translate(8px, -8px) rotate(1deg); }
+        }
+        @keyframes float-drift-1 {
+          0%, 100% { transform: translate(0, 0) rotate(0deg); }
+          33% { transform: translate(-12px, 18px) rotate(-2deg); }
+          66% { transform: translate(20px, -12px) rotate(1.5deg); }
+        }
+        @keyframes float-drift-2 {
+          0%, 100% { transform: translate(0, 0) rotate(0deg); }
+          50% { transform: translate(18px, 15px) rotate(2deg); }
+        }
+      `}</style>
+
+      <PageWrapper id="home">
+        <Header />
 
       {/* ─── HERO ─────────────────────────────────────────────────────── */}
       <HeroSection>
@@ -169,6 +229,9 @@ export default function Home() {
         </div>
       </AboutSection>
 
+      {/* ─── ARQUITETURA EM AÇÃO ───────────────────────────────────────── */}
+      <Arquitetura />
+
       {/* ─── TRAJETÓRIA ───────────────────────────────────────────────── */}
       <SectionWrapper id="experiencia" tone="base">
         <div data-aos="fade-up">
@@ -182,9 +245,6 @@ export default function Home() {
           <Capacidades />
         </div>
       </SectionWrapper>
-
-      {/* ─── PROJETOS (oculto temporariamente) ───────────────────────── */}
-      {/* Habilite esta seção quando tiver projetos corporativos para exibir */}
 
       {/* ─── FORMAÇÃO & CONTATO ───────────────────────────────────────── */}
       <EducationContactSection id="contato">
@@ -299,6 +359,7 @@ export default function Home() {
       </EducationContactSection>
 
       <Footer />
-    </PageWrapper>
+      </PageWrapper>
+    </>
   );
 }
