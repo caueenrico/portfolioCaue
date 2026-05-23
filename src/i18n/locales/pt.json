@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Cauê Enrico — Arquiteto de Soluções | Hands-on em AWS e Integrações",
+    "description": "Arquiteto de soluções na Ultracargo. Hands-on em AWS, integrações SAP, .NET, Node.js e pipelines CI/CD. Background entre operação portuária e tecnologia.",
+    "ogLocale": "pt_BR",
+    "htmlLang": "pt-BR"
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Trajetória",
+    "skills": "Capacidades",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Arquiteto de",
+    "titleAccent": "Soluções",
+    "location": "Cauê Enrico · Guarujá, SP",
+    "bio": "Desenho como sistemas são construídos, conectados e operam em produção: workloads na AWS, integrações entre ERPs e serviços, pipelines CI/CD. Arquiteto com background em desenvolvimento.",
+    "ctaLinkedin": "LinkedIn",
+    "ctaWhatsapp": "WhatsApp",
+    "ctaGithub": "GitHub",
+    "portraitAlt": "Cauê Enrico — Arquiteto de Soluções"
+  },
+  "about": {
+    "label": "Sobre",
+    "h2Line1": "Arquitetura de",
+    "h2Line2": "ponta a ponta.",
+    "p1": "Projeto soluções de ponta a ponta. Defino arquitetura, escolho workloads na AWS, modelo integrações entre ERPs e serviços, configuro pipelines CI/CD. Acompanho cada decisão até a produção e respondo pelas escolhas que sustentam escalabilidade, segurança e confiabilidade.",
+    "p2": "Trabalho com soluções orientadas a eventos (SQS), aplico padrões como CQRS e Outbox, e mantenho stack diversa: .NET, Node.js, Python, React e Angular. Uso o que melhor resolve o problema.",
+    "recognitionTitle": "Reconhecido pela Ultracargo em 2024",
+    "recognitionSub": "Projeto de IA para prevenção de fraudes em terminais portuários",
+    "cards": [
+      {
+        "title": "Arquitetura de Soluções",
+        "body": "Decido como sistemas são construídos e conectados. Escolho padrões (CQRS, Outbox, event-driven), defino limites entre serviços, e projeto integrações que sobrevivem a picos de carga e falhas isoladas."
+      },
+      {
+        "title": "Cloud & DevOps",
+        "body": "Workloads na AWS (EC2, S3, SQS, Cognito), pipelines CI/CD em Azure DevOps, Docker e IaC com Terraform. Cuido do ciclo todo, do desenho da infra ao hotfix em produção."
+      },
+      {
+        "title": "Contexto de Operação",
+        "body": "Trago contexto de operação para cada decisão técnica. Priorizo o que sustenta o negócio em vez do que apenas parece sofisticado."
+      }
+    ]
+  },
+  "experience": {
+    "label": "Trajetória",
+    "h2": "Experiência Profissional",
+    "desc": "Da operação portuária à arquitetura de software: uma trajetória construída com propósito técnico, liderança e entrega real em sistemas críticos.",
+    "items": [
+      {
+        "period": "Jun 2024 — Atual",
+        "badge": "★ Reconhecido em 2024",
+        "title": "Analista de Sistemas Pleno",
+        "company": "Ultracargo · Matriz",
+        "description": "Responsável pela arquitetura das principais soluções da empresa. Liderei o projeto de reconhecimento facial com IA para prevenção de fraudes em terminais portuários, reconhecido internamente pelo impacto direto na segurança das operações.",
+        "achievements": [
+          "Definição da arquitetura das principais soluções, com escolha de workloads na AWS e padrões para garantir resiliência e consistência (CQRS, Outbox, event-driven)",
+          "Modelagem de integrações com SAP via PI/PO e CPI, conectando sistemas legados ao ecossistema corporativo",
+          "Pipelines CI/CD em Azure DevOps com build, test e deploy automatizados, observabilidade e hotfix em produção",
+          "Decisões de infraestrutura em AWS (EC2, S3, CloudFront, Cognito, SQS) e Azure App Services, com IaC em Terraform",
+          "Interlocução direta com áreas de negócio (logística, jurídico, operações) para traduzir requisitos em soluções viáveis"
+        ],
+        "captions": [
+          "Reconhecimento #techparamover · Ultracargo 2024",
+          "Entrega da placa de premiação · Ultracargo 2024",
+          "Implantação de sistema · Terminal Aratu"
+        ]
+      },
+      {
+        "period": "Jun 2023 — Jun 2024",
+        "title": "Desenvolvedor Full Stack",
+        "company": "Freelancer",
+        "description": "Desenvolvimento de aplicações web responsivas e APIs para clientes de diferentes segmentos. Entrega de soluções com autenticação, dashboards analíticos e integrações com APIs externas."
+      },
+      {
+        "period": "Jun 2022 — Jun 2024",
+        "title": "Técnico de Controle e Qualidade Operacional",
+        "company": "Ultracargo Santos",
+        "description": "Controle de operações marítimas no centro operacional da Ultracargo Santos. Comunicação técnica em inglês com tripulações internacionais e desenvolvimento dos primeiros cálculos operacionais automatizados, o que abriu meu caminho para a área de tecnologia."
+      },
+      {
+        "period": "Jan 2016 — Jan 2017",
+        "title": "Aspirante a Oficial, Arma de Infantaria",
+        "company": "Exército Brasileiro",
+        "description": "Aprovado em concurso nacional de alta competitividade. A formação intensiva em estratégia, liderança sob pressão e trabalho em equipe moldou minha atuação técnica e de gestão."
+      }
+    ]
+  },
+  "skills": {
+    "label": "Capacidades",
+    "h2": "Arquitetura & Tecnologia",
+    "desc": "Competências organizadas por domínio, do design de sistemas à entrega em produção com qualidade e segurança.",
+    "groups": [
+      {
+        "icon": "⬡",
+        "title": "System Design & Integration",
+        "items": ["Event-driven Architecture", "CQRS", "Outbox Pattern", "Microsserviços", "Clean Architecture", "SOLID", "APIs REST", "SAP PI/PO", "SAP CPI", "Integração de ERPs e Sistemas Legados"]
+      },
+      {
+        "icon": "△",
+        "title": "Cloud & DevOps",
+        "items": ["AWS (EC2, S3, CloudFront, Cognito, SQS)", "Azure App Services", "Azure DevOps Pipelines", "Terraform (IaC)", "Docker", "CI/CD", "Observabilidade"]
+      },
+      {
+        "icon": "{ }",
+        "title": "Engineering",
+        "items": [".NET 8 (C#)", "Node.js", "TypeScript", "Python", "React", "Next.js", "Angular", "React Native", "Tailwind CSS"]
+      },
+      {
+        "icon": "◇",
+        "title": "Data",
+        "items": ["SQL Server", "PostgreSQL", "SQLite", "Modelagem Relacional", "Migrations", "Otimização de Queries"]
+      },
+      {
+        "icon": "⊕",
+        "title": "Business Domain",
+        "items": ["Operações Portuárias", "Logística", "Sistemas Críticos", "Alinhamento com Stakeholders", "Inglês Intermediário"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Formação",
+    "h2Line1": "Educação &",
+    "h2Line2": "Certificações",
+    "items": [
+      { "degree": "Análise e Desenvolvimento de Sistemas", "institution": "Universidade Anhembi Morumbi", "period": "2021 — 2023" },
+      { "degree": "Academia SAP S/4HANA ABAP", "institution": "Ka Solution", "period": "2024" },
+      { "degree": "Especialização Full Stack", "institution": "Rocketseat · Ignite & Explorer", "period": "2022 — 2023" }
+    ],
+    "certificatesLabel": "Certificados",
+    "certificatesSub": "+25 extracurriculares"
+  },
+  "contact": {
+    "label": "Contato",
+    "h2Line1": "Vamos construir",
+    "h2Line2": "algo juntos?",
+    "linkedinLabel": "LinkedIn",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mail",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "tagline": "Arquiteto de Soluções · Guarujá, SP",
+    "copyright": "© {{year}} Cauê Enrico. Todos os direitos reservados."
+  }
+}
