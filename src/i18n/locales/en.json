@@ -15,7 +15,7 @@
     "title": "Solutions",
     "titleAccent": "Architect",
     "location": "Cauê Enrico · Brazil",
-    "bio": "I design how systems are built, connected, and behave in production: AWS workloads, ERP integrations, CI/CD pipelines. Architect with a developer background.",
+    "bio": "I design how systems are built, connected, and behave in production. I pick the right tech, model ERP and service integrations, define AWS infrastructure and CI/CD pipelines. Architect with a developer background.",
     "ctaLinkedin": "LinkedIn",
     "ctaWhatsapp": "WhatsApp",
     "ctaGithub": "GitHub",
@@ -25,18 +25,18 @@
     "label": "About",
     "h2Line1": "End-to-end",
     "h2Line2": "architecture.",
-    "p1": "I design solutions end-to-end. I define the architecture, choose AWS workloads, model ERP and service integrations, and set up CI/CD pipelines. I follow every decision to production and own the choices that keep systems scalable, secure, and reliable.",
+    "p1": "I design solutions end-to-end. I define the architecture, pick the right tech and AWS services for the problem, model ERP and system integrations, and set up CI/CD pipelines. I follow every decision to production and own the choices that keep systems scalable, secure, and reliable.",
     "p2": "I work with event-driven solutions (SQS), apply patterns like CQRS and Outbox, and keep a diverse stack: .NET, Node.js, Python, React, and Angular. I pick what best fits the problem.",
     "recognitionTitle": "Recognized by Ultracargo in 2024",
     "recognitionSub": "AI project for fraud prevention at port terminals",
     "cards": [
       {
         "title": "Solutions Architecture",
-        "body": "I decide how systems are built and connected. I choose patterns (CQRS, Outbox, event-driven), define service boundaries, and design integrations that survive load spikes and isolated failures."
+        "body": "I decide how systems are built and connected. I choose patterns (DDD, CQRS, Outbox, event-driven), define service boundaries, and design integrations that survive load spikes and isolated failures."
       },
       {
         "title": "Cloud & DevOps",
-        "body": "AWS workloads (EC2, S3, SQS, Cognito), CI/CD on Azure DevOps, Docker, and Terraform-based IaC. I own the full cycle, from infrastructure design to production hotfixes."
+        "body": "AWS infrastructure (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM), CI/CD on Azure DevOps, Docker, and Terraform-based IaC. I own the full cycle, from infrastructure design to production hotfixes."
       },
       {
         "title": "Operational Context",
@@ -56,10 +56,10 @@
         "company": "Ultracargo · Brazil's largest independent liquid bulk logistics operator",
         "description": "I own the architecture of the company's main software initiatives. I led an AI-based facial recognition project for fraud prevention at port terminals, internally recognized for its direct impact on operational security.",
         "achievements": [
-          "Architecture decisions across the company's main solutions, including AWS workload selection and patterns for resilience and consistency (CQRS, Outbox, event-driven)",
+          "Architecture decisions across the company's main solutions, including technology and AWS service selection, plus patterns for resilience and consistency (DDD, CQRS, Outbox, event-driven)",
           "SAP integration design via PI/PO and CPI, connecting legacy systems to the corporate ecosystem",
           "CI/CD pipelines on Azure DevOps with automated build, test, and deploy, plus observability and production hotfixes",
-          "Infrastructure decisions on AWS (EC2, S3, CloudFront, Cognito, SQS) and Azure App Services, with Terraform-based IaC",
+          "Infrastructure decisions on AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM) and Azure App Services, with Terraform-based IaC",
           "Direct stakeholder alignment with business units (logistics, legal, operations) to turn requirements into viable solutions"
         ],
         "captions": [
@@ -96,12 +96,12 @@
       {
         "icon": "⬡",
         "title": "System Design & Integration",
-        "items": ["Event-driven Architecture", "CQRS", "Outbox Pattern", "Microservices", "Clean Architecture", "SOLID", "REST APIs", "SAP PI/PO", "SAP CPI", "ERP & Legacy System Integration"]
+        "items": ["Event-driven Architecture", "DDD", "CQRS", "Outbox Pattern", "Microservices", "Clean Architecture", "SOLID", "REST APIs", "SAP PI/PO", "SAP CPI", "ERP & Legacy System Integration"]
       },
       {
         "icon": "△",
         "title": "Cloud & DevOps",
-        "items": ["AWS (EC2, S3, CloudFront, Cognito, SQS)", "Azure App Services", "Azure DevOps Pipelines", "Terraform (IaC)", "Docker", "CI/CD", "Observability"]
+        "items": ["AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM)", "Azure App Services", "Azure DevOps Pipelines", "Terraform (IaC)", "Docker", "CI/CD", "Observability"]
       },
       {
         "icon": "{ }",
