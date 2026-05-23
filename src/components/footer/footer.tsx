@@ -1,13 +1,16 @@
 import { Container } from "./styles";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function Footer() {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
+  const copyright = t('footer.copyright').replace('{{year}}', String(year));
 
   return (
     <Container>
       <div className="footerLeft">
         <span className="footerLogo">CE.</span>
-        <span className="footerTagline">Arquiteto de Software · Guarujá, SP</span>
+        <span className="footerTagline">{t('footer.tagline')}</span>
       </div>
 
       <div className="footerRight">
@@ -16,7 +19,7 @@ export function Footer() {
           <a href="https://github.com/caueenrico" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="mailto:caueenrico@gmail.com">Email</a>
         </div>
-        <span className="copyright">© {year} Cauê Enrico. Todos os direitos reservados.</span>
+        <span className="copyright">{copyright}</span>
       </div>
     </Container>
   );
