@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caueenrico.vercel.app/sitemap.xml

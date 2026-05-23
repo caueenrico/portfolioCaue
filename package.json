@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
@@ -15,6 +16,7 @@
     "@types/react-dom": "18.0.11",
     "aos": "^3.0.0-beta.6",
     "next": "13.3.0",
+    "next-sitemap": "^4.2.3",
     "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
