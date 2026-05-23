@@ -8,6 +8,7 @@ import { Experiencias } from "../components/experiencia";
 import { Capacidades } from "../components/capacidades";
 import { Certificados } from "../components/certificados";
 import { Footer } from "../components/footer/footer";
+import { SEO } from "../components/seo/SEO";
 import { useEasterEggs } from "../components/easterEggs/useEasterEggs";
 import { useTranslation } from "@/i18n/useTranslation";
 
@@ -71,6 +72,8 @@ export default function Home() {
 
   return (
     <>
+      <SEO />
+
       <div id="tesseract-grid" aria-hidden="true">
         <div className="grid-plane" />
       </div>
