@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { ContHeader } from "./styles";
 import { List } from "phosphor-react";
 import { MenuMobile } from "../menuMobile";
+import { LanguageToggle } from "./LanguageToggle";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     function handleScroll() {
@@ -42,16 +45,18 @@ export function Header() {
           <a href="#home" className="logo" onClick={handleLogoClick}>CE.</a>
 
           <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#experiencia">Trajetória</a>
-            <a href="#capacidades">Capacidades</a>
-            {/* <a href="#arquitetura">Arquitetura</a> */}
-            <a href="#contato">Contato</a>
+            <a href="#sobre">{t('nav.about')}</a>
+            <a href="#experiencia">{t('nav.experience')}</a>
+            <a href="#capacidades">{t('nav.skills')}</a>
+            <a href="#contato">{t('nav.contact')}</a>
           </nav>
 
-          <button className="menuBtn" onClick={() => setMenuIsVisible(!menuIsVisible)}>
-            <List size={22} color="#E8A838" />
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+            <LanguageToggle variant="header" />
+            <button className="menuBtn" onClick={() => setMenuIsVisible(!menuIsVisible)}>
+              <List size={22} color="#E8A838" />
+            </button>
+          </div>
         </div>
       </ContHeader>
     </>
