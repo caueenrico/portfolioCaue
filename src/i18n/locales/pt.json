@@ -54,12 +54,12 @@
         "badge": "★ Reconhecido em 2024",
         "title": "Analista de Sistemas Pleno",
         "company": "Ultracargo · Matriz",
-        "description": "Responsável pela arquitetura das principais soluções da empresa. Liderei o projeto de reconhecimento facial com IA para prevenção de fraudes em terminais portuários, reconhecido internamente pelo impacto direto na segurança das operações.",
+        "description": "Responsável pela arquitetura das principais soluções da empresa. Liderei o projeto de reconhecimento facial com IA para prevenção de fraudes em terminais portuários, que atingiu 99% de assertividade na identificação, reconhecido internamente pelo impacto direto na segurança das operações.",
         "achievements": [
-          "Definição da arquitetura das principais soluções, com escolha de tecnologias e serviços AWS, e adoção de padrões para garantir resiliência e consistência (DDD, CQRS, Outbox, event-driven)",
-          "Modelagem de integrações com SAP via PI/PO e CPI, conectando sistemas legados ao ecossistema corporativo",
+          "Arquitetura das principais soluções da empresa, incluindo o portal logístico corporativo que processa milhares de requisições por dia, com escolha de tecnologias, serviços AWS e padrões para resiliência e consistência (DDD, CQRS, Outbox, event-driven)",
+          "Modelagem de integrações com SAP via PI/PO e CPI, trafegando cerca de 300 mensagens por dia entre sistemas legados e o ecossistema corporativo",
           "Pipelines CI/CD em Azure DevOps com build, test e deploy automatizados, observabilidade e hotfix em produção",
-          "Decisões de infraestrutura em AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM) e Azure App Services, com IaC em Terraform",
+          "Decisões de infraestrutura em AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM) e Azure App Services, gerenciando múltiplos ambientes com IaC em Terraform",
           "Interlocução direta com áreas de negócio (logística, jurídico, operações) para traduzir requisitos em soluções viáveis"
         ],
         "captions": [
@@ -125,6 +125,7 @@
     "h2Line1": "Educação &",
     "h2Line2": "Certificações",
     "items": [
+      { "degree": "Pós-graduação em Engenharia de IA Aplicada", "institution": "UNIPDS", "period": "2026 — Atual" },
       { "degree": "Análise e Desenvolvimento de Sistemas", "institution": "Universidade Anhembi Morumbi", "period": "2021 — 2023" },
       { "degree": "Academia SAP S/4HANA ABAP", "institution": "Ka Solution", "period": "2024" },
       { "degree": "Especialização Full Stack", "institution": "Rocketseat · Ignite & Explorer", "period": "2022 — 2023" }
