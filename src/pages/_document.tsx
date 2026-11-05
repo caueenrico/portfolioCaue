@@ -1,4 +1,3 @@
-import { getCssText } from "@/styles";
 import { Html, Head, Main, NextScript } from "next/document";
 
 const ANTI_FOUC_SCRIPT = `
@@ -21,6 +20,7 @@ const ANTI_FOUC_SCRIPT = `
     var root = document.documentElement;
     root.lang = lang === 'pt' ? 'pt-BR' : 'en';
     root.dataset.lang = lang;
+    root.classList.add('js');
   } catch (e) {
     document.documentElement.lang = 'en';
     document.documentElement.dataset.lang = 'en';
@@ -39,12 +39,10 @@ export default function Document() {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
           rel="stylesheet"
         />
-        <meta name="theme-color" content="#08090E" />
-
-        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+        <meta name="theme-color" content="#EEEAE2" />
       </Head>
       <body>
         <script dangerouslySetInnerHTML={{ __html: ANTI_FOUC_SCRIPT }} />

@@ -8,9 +8,19 @@ const PERSON_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Cauê Enrico',
-  jobTitle: 'Solutions Architect',
+  jobTitle: 'Senior Solutions & AI Architect',
   worksFor: { '@type': 'Organization', name: 'Ultracargo' },
-  address: { '@type': 'PostalAddress', addressCountry: 'BR' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Guarujá', addressRegion: 'SP', addressCountry: 'BR' },
+  knowsAbout: [
+    'Generative AI',
+    'Model Context Protocol',
+    'Amazon Bedrock',
+    'AWS',
+    'Python',
+    'Node.js',
+    '.NET',
+    'Event-driven architecture',
+  ],
   url: SITE_URL,
   sameAs: [
     'https://www.linkedin.com/in/caue-enrico/',
@@ -18,8 +28,8 @@ const PERSON_JSON_LD = {
   ],
   alumniOf: [
     { '@type': 'EducationalOrganization', name: 'Anhembi Morumbi University' },
+    { '@type': 'EducationalOrganization', name: 'UNIPDS' },
     { '@type': 'EducationalOrganization', name: 'Ka Solution' },
-    { '@type': 'EducationalOrganization', name: 'Rocketseat' },
   ],
 };
 

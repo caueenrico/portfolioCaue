@@ -1,149 +1,270 @@
 {
   "meta": {
-    "title": "Cauê Enrico — Solutions Architect | Hands-on Cloud & Integration",
-    "description": "Solutions Architect at Ultracargo. Hands-on with AWS, SAP integrations, .NET, Node.js, and CI/CD pipelines. Background bridging port operations and software architecture.",
+    "title": "Cauê Enrico | Senior Solutions & AI Architect",
+    "description": "Senior Solutions & AI Architect based in Brazil. I build generative AI platforms, MCP servers and cloud native systems on AWS with Python, Node.js and .NET.",
     "ogLocale": "en_US",
     "htmlLang": "en"
   },
   "nav": {
     "about": "About",
-    "experience": "Experience",
-    "skills": "Skills",
-    "contact": "Contact"
+    "systems": "Systems",
+    "method": "Method",
+    "path": "Experience",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
   },
   "hero": {
-    "title": "Solutions",
-    "titleAccent": "Architect",
-    "location": "Cauê Enrico · Brazil",
-    "bio": "I design how systems are built, connected, and behave in production. I pick the right tech, model ERP and service integrations, define AWS infrastructure and CI/CD pipelines. Architect with a developer background.",
-    "ctaLinkedin": "LinkedIn",
-    "ctaWhatsapp": "WhatsApp",
-    "ctaGithub": "GitHub",
-    "portraitAlt": "Cauê Enrico — Solutions Architect"
+    "role": "Solutions & AI Architect",
+    "level": "Senior, hands-on",
+    "location": "Guarujá, Brazil. Remote across time zones.",
+    "statement": "I build the layer that connects generative AI to the systems, data and permissions of companies already running in production.",
+    "stack": "Python · Node.js · .NET · AWS",
+    "ctaEmail": "Get in touch",
+    "ctaCv": "Résumé (PDF)",
+    "portraitAlt": "Portrait of Cauê Enrico",
+    "scroll": "Scroll"
   },
   "about": {
+    "index": "01",
     "label": "About",
-    "h2Line1": "End-to-end",
-    "h2Line2": "architecture.",
-    "p1": "I design solutions end-to-end. I define the architecture, pick the right tech and AWS services for the problem, model ERP and system integrations, and set up CI/CD pipelines. I follow every decision to production and own the choices that keep systems scalable, secure, and reliable.",
-    "p2": "I work with event-driven solutions (SQS), apply patterns like CQRS and Outbox, and keep a diverse stack: .NET, Node.js, Python, React, and Angular. I pick what best fits the problem.",
-    "recognitionTitle": "Recognized by Ultracargo in 2024",
-    "recognitionSub": "AI project for fraud prevention at port terminals",
-    "cards": [
+    "text": "Software engineer with experience in backend development, distributed systems and cloud native solution architecture on AWS.",
+    "notes": [
       {
-        "title": "Solutions Architecture",
-        "body": "I decide how systems are built and connected. I choose patterns (DDD, CQRS, Outbox, event-driven), define service boundaries, and design integrations that survive load spikes and isolated failures."
+        "k": "Backend and cloud",
+        "v": "APIs and enterprise integrations with Python, Node.js, TypeScript and .NET, applying event-driven architecture, messaging, automated testing, Terraform, Docker and CI/CD."
       },
       {
-        "title": "Cloud & DevOps",
-        "body": "AWS infrastructure (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM), CI/CD on Azure DevOps, Docker, and Terraform-based IaC. I own the full cycle, from infrastructure design to production hotfixes."
+        "k": "Generative AI",
+        "v": "AI engineering for the enterprise: intelligent agents, LLM integration, RAG, Model Context Protocol (MCP) and Amazon Bedrock AgentCore, with corporate authentication, authorization, observability and AI governance."
       },
       {
-        "title": "Operational Context",
-        "body": "I bring operational context to every technical decision. I prioritize what supports the business over what merely looks sophisticated."
+        "k": "AI-assisted development",
+        "v": "Claude Code every day with Spec-Driven Development (SDD), critically reviewing generated code for security, quality and maintainability."
       }
     ]
   },
-  "experience": {
-    "label": "Experience",
-    "h2": "Professional Background",
-    "desc": "From port operations to software architecture: a path built with technical purpose, leadership, and real delivery in mission-critical systems.",
+  "systems": {
+    "index": "02",
+    "label": "Systems",
+    "title": "What I",
+    "titleEm": "build",
+    "intro": "Patterns I design and ship to production. Every company that takes AI seriously runs into the same questions: who can ask, what the agent is allowed to touch, and what it costs.",
+    "footnote": "System and client names omitted for confidentiality.",
+    "patternLabel": "Pattern",
     "items": [
       {
-        "period": "Jun 2024 — Present",
-        "badge": "★ Recognized in 2024",
-        "title": "Software Engineer (Solutions Architecture)",
-        "company": "Ultracargo · Brazil's largest independent liquid bulk logistics operator",
-        "description": "I own the architecture of the company's main software initiatives. I led an AI-based facial recognition project for fraud prevention at port terminals, reaching 99% identification accuracy, internally recognized for its direct impact on operational security.",
-        "achievements": [
-          "Architecture of the company's main solutions, including the corporate logistics portal handling thousands of requests per day, with technology and AWS service selection plus patterns for resilience and consistency (DDD, CQRS, Outbox, event-driven)",
-          "SAP integration design via PI/PO and CPI, moving around 300 messages per day between legacy systems and the corporate ecosystem",
-          "CI/CD pipelines on Azure DevOps with automated build, test, and deploy, plus observability and production hotfixes",
-          "Infrastructure decisions on AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM) and Azure App Services, managing multiple environments with Terraform-based IaC",
-          "Direct stakeholder alignment with business units (logistics, legal, operations) to turn requirements into viable solutions"
-        ],
-        "captions": [
-          "Recognition #techparamover · Ultracargo 2024",
-          "Award ceremony · Ultracargo 2024",
-          "System deployment · Aratu Terminal"
+        "title": "MCP servers with identity",
+        "body": "Enterprise tools and data exposed to AI agents through the Model Context Protocol. Every call carries who asked, goes through OAuth 2.0 and OIDC, and honors the user's role. Questions are logged and become the backlog for the next tools.",
+        "tags": "Python · MCP · OAuth 2.0 · OIDC · RBAC"
+      },
+      {
+        "title": "Generative AI platform",
+        "body": "LLMs, agents and RAG on Amazon Bedrock and AgentCore, wired to the data the company already owns. Langfuse observability tracks runs, tokens and cost per model before the invoice tells the story.",
+        "tags": "Bedrock · AgentCore · RAG · LangGraph · Langfuse"
+      },
+      {
+        "title": "Data through natural language",
+        "body": "Business teams describe what they want to see and AI builds the interface. Each team works in isolation and reaches data through a governed catalog, MCP or spreadsheets. Serverless, pay per use.",
+        "tags": "Lambda · API Gateway · Cognito · S3 · MCP"
+      },
+      {
+        "title": "Event-driven integrations",
+        "body": "APIs in .NET 8 and Node.js talking through messaging. Transactional Outbox so the transaction and the event never disagree. SAP integration through Integration Suite, plus regulatory systems.",
+        "tags": ".NET 8 · SQS · Outbox · SAP CPI · Terraform"
+      }
+    ]
+  },
+  "method": {
+    "index": "03",
+    "label": "Method",
+    "title": "How I",
+    "titleEm": "work",
+    "intro": "AI-assisted development every day, with Claude Code and Spec-Driven Development. AI speeds things up. Accountability stays with me.",
+    "steps": [
+      {
+        "title": "Specify",
+        "body": "Contract, boundaries and acceptance criteria before the first line. The spec drives the code, not the other way around."
+      },
+      {
+        "title": "Generate",
+        "body": "Code is generated from the spec with Claude Code. Architecture, naming and service boundaries are my call."
+      },
+      {
+        "title": "Review",
+        "body": "Every change gets a critical read for security, quality and maintainability. Generated code is a draft until proven otherwise."
+      },
+      {
+        "title": "Validate",
+        "body": "Automated tests and a CI/CD pipeline. If it does not pass the pipeline, it does not exist."
+      },
+      {
+        "title": "Operate",
+        "body": "Claude Code with the AWS CLI to investigate and automate infrastructure. Health checks and observability from the first deploy."
+      }
+    ]
+  },
+  "path": {
+    "index": "04",
+    "label": "Experience",
+    "title": "From the port to",
+    "titleEm": "architecture",
+    "items": [
+      {
+        "period": "2026 → now",
+        "role": "Senior Solutions & AI Architect",
+        "org": "Ultracargo · São Paulo",
+        "body": "Enterprise generative AI platform, MCP servers and cloud native architectures on AWS. Technical lead for development teams on architecture decisions and AI adoption."
+      },
+      {
+        "period": "2024 → 2026",
+        "role": "Systems Analyst",
+        "org": "Ultracargo · São Paulo",
+        "body": "Applications and APIs in .NET 8 with Clean Architecture, event-driven design, Azure DevOps pipelines and support for mission-critical systems in production."
+      },
+      {
+        "period": "2023 → 2024",
+        "role": "Full Stack Developer",
+        "org": "Freelance",
+        "body": "Web apps and APIs with React, Node.js and TypeScript, third-party integrations and OAuth / JWT authentication."
+      },
+      {
+        "period": "2017 → 2024",
+        "role": "Operations Control & Quality",
+        "org": "Ultracargo · Santos",
+        "body": "Automated operational calculations and built internal tools for port operations. Technical communication in English with international crews."
+      },
+      {
+        "period": "2016 → 2017",
+        "role": "Officer Cadet",
+        "org": "Brazilian Army",
+        "body": "Training in leadership, team management and planning."
+      }
+    ]
+  },
+  "stack": {
+    "index": "05",
+    "label": "Stack",
+    "title": "Tools of the",
+    "titleEm": "trade",
+    "groups": [
+      {
+        "title": "Backend",
+        "items": [
+          "Python",
+          "Node.js",
+          "TypeScript",
+          "C# / .NET 8",
+          "REST APIs",
+          "Microservices",
+          "Clean Architecture",
+          "DDD"
         ]
       },
       {
-        "period": "Jun 2023 — Jun 2024",
-        "title": "Full Stack Developer",
-        "company": "Freelancer",
-        "description": "Built responsive web applications and APIs for clients across multiple sectors. Delivered solutions with authentication, analytics dashboards, and third-party API integrations."
+        "title": "Generative AI",
+        "items": [
+          "Amazon Bedrock",
+          "Bedrock AgentCore",
+          "LLMs and agents",
+          "RAG",
+          "Model Context Protocol",
+          "LangGraph"
+        ]
       },
       {
-        "period": "Jun 2022 — Jun 2024",
-        "title": "Operational Control & Quality Technician",
-        "company": "Ultracargo Santos · Liquid bulk operations center",
-        "description": "Maritime operations control at Ultracargo Santos. Technical communication in English with international vessel crews and development of the first automated operational calculations, which opened my path into the technology field."
+        "title": "AWS and infrastructure",
+        "items": [
+          "ECS Fargate",
+          "API Gateway",
+          "Lambda",
+          "SQS",
+          "RDS",
+          "S3",
+          "Cognito and IAM",
+          "CloudWatch",
+          "Docker",
+          "Terraform"
+        ]
       },
       {
-        "period": "Jan 2016 — Jan 2017",
-        "title": "Officer Candidate, Infantry",
-        "company": "Brazilian Army",
-        "description": "Selected through a highly competitive national entrance exam. Intensive training in strategy, leadership under pressure, and teamwork shaped both my technical and management approach."
-      }
-    ]
-  },
-  "skills": {
-    "label": "Skills",
-    "h2": "Architecture & Engineering",
-    "desc": "Capabilities organized by domain, from system design to production delivery with quality and security.",
-    "groups": [
-      {
-        "icon": "⬡",
-        "title": "System Design & Integration",
-        "items": ["Event-driven Architecture", "DDD", "CQRS", "Outbox Pattern", "Microservices", "Clean Architecture", "SOLID", "REST APIs", "SAP PI/PO", "SAP CPI", "ERP & Legacy System Integration"]
+        "title": "Security and observability",
+        "items": [
+          "OAuth 2.0",
+          "OIDC",
+          "JWT",
+          "RBAC",
+          "Federated identity",
+          "Langfuse",
+          "AI governance"
+        ]
       },
       {
-        "icon": "△",
-        "title": "Cloud & DevOps",
-        "items": ["AWS (EC2, ECS, ECR, Lambda, RDS, DynamoDB, S3, CloudFront, SQS, SNS, Cognito, IAM)", "Azure App Services", "Azure DevOps Pipelines", "Terraform (IaC)", "Docker", "CI/CD", "Observability"]
+        "title": "Data and integration",
+        "items": [
+          "PostgreSQL",
+          "SQL Server",
+          "Amazon Redshift",
+          "Redis / ElastiCache",
+          "SAP Integration Suite",
+          "Messaging"
+        ]
       },
       {
-        "icon": "{ }",
         "title": "Engineering",
-        "items": [".NET 8 (C#)", "Node.js", "TypeScript", "Python", "React", "Next.js", "Angular", "React Native", "Tailwind CSS"]
-      },
-      {
-        "icon": "◇",
-        "title": "Data",
-        "items": ["SQL Server", "PostgreSQL", "SQLite", "Relational Modeling", "Migrations", "Query Optimization"]
-      },
-      {
-        "icon": "⊕",
-        "title": "Business Domain",
-        "items": ["Port Operations", "Logistics", "Mission-Critical Systems", "Stakeholder Alignment", "Intermediate English"]
+        "items": [
+          "Claude Code",
+          "Spec-Driven Development",
+          "Automated testing",
+          "CI/CD on Azure DevOps",
+          "Git",
+          "Architecture docs"
+        ]
       }
     ]
   },
   "education": {
+    "index": "06",
     "label": "Education",
-    "h2Line1": "Education &",
-    "h2Line2": "Certifications",
-    "items": [
-      { "degree": "Postgraduate Degree in Applied AI Engineering", "institution": "UNIPDS", "period": "2026 — Present" },
-      { "degree": "Associate Degree in Systems Analysis and Development", "institution": "Anhembi Morumbi University", "period": "2021 — 2023" },
-      { "degree": "SAP S/4HANA ABAP Academy", "institution": "Ka Solution", "period": "2024" },
-      { "degree": "Full Stack Specialization", "institution": "Rocketseat · Ignite & Explorer", "period": "2022 — 2023" }
+    "degreesLabel": "Education",
+    "certsLabel": "Certifications",
+    "languagesLabel": "Languages",
+    "degrees": [
+      {
+        "name": "Graduate degree in Applied AI Engineering",
+        "org": "UNIPDS",
+        "year": "2027"
+      },
+      {
+        "name": "Systems Analysis and Development",
+        "org": "Anhembi Morumbi University",
+        "year": "2021 → 2023"
+      },
+      {
+        "name": "SAP ABAP S/4HANA Academy",
+        "org": "Ka Solution",
+        "year": "2024"
+      }
     ],
-    "certificatesLabel": "Certificates",
-    "certificatesSub": "+25 extracurricular"
+    "certs": [
+      "AWS Agentic AI Demonstrated",
+      "AWS Cloud Quest: Generative AI Practitioner",
+      "Claude Code 101"
+    ],
+    "languages": [
+      "Portuguese, native",
+      "English, intermediate: technical reading and professional communication"
+    ]
   },
   "contact": {
+    "index": "07",
     "label": "Contact",
-    "h2Line1": "Let's build",
-    "h2Line2": "something together?",
-    "linkedinLabel": "LinkedIn",
-    "whatsappLabel": "WhatsApp",
-    "emailLabel": "Email",
-    "githubLabel": "GitHub"
-  },
-  "footer": {
-    "tagline": "Solutions Architect · Brazil",
-    "copyright": "© {{year}} Cauê Enrico. All rights reserved."
+    "titleA": "Next system?",
+    "titleB": "Let's talk.",
+    "emailHint": "In English or Portuguese",
+    "cv": "Résumé (PDF)",
+    "top": "Back to top",
+    "local": "Local time",
+    "rights": "All rights reserved."
   }
 }

@@ -13,7 +13,7 @@ export function useTranslation() {
   if (!ctx) {
     throw new Error('useTranslation must be used within <LanguageProvider>');
   }
-  const { lang, setLang, locale } = ctx;
+  const { lang, setLang, locale, ready } = ctx;
 
   function t(path: string): string {
     const value = lookup(locale, path);
@@ -34,5 +34,5 @@ export function useTranslation() {
     return (value ?? {}) as T;
   }
 
-  return { t, tArray, tObject, lang, setLang };
+  return { t, tArray, tObject, lang, setLang, ready };
 }

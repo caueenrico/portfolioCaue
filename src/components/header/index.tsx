@@ -1,64 +1,82 @@
 import { useEffect, useState } from "react";
-import { ContHeader } from "./styles";
-import { List } from "phosphor-react";
-import { MenuMobile } from "../menuMobile";
-import { LanguageToggle } from "./LanguageToggle";
 import { useTranslation } from "@/i18n/useTranslation";
+import { LanguageToggle } from "./LanguageToggle";
+import { LocalTime } from "../localTime";
+
+const LINKS = [
+  { href: "#sobre", key: "nav.about" },
+  { href: "#sistemas", key: "nav.systems" },
+  { href: "#metodo", key: "nav.method" },
+  { href: "#trajetoria", key: "nav.path" },
+  { href: "#contato", key: "nav.contact" },
+];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuIsVisible, setMenuIsVisible] = useState(false);
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    function handleScroll() {
-      setScrolled(window.scrollY > 20);
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleLogoClick = () => {
-    try {
-      const ctx = new AudioContext();
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'square';
-      osc.frequency.setValueAtTime(440, ctx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.1);
-      gain.gain.setValueAtTime(0.08, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + 0.15);
-    } catch {}
-  };
+    document.documentElement.classList.toggle("menu-open", open);
+  }, [open]);
 
   return (
     <>
-      <MenuMobile
-        menuIsVisible={menuIsVisible}
-        closeMenu={() => setMenuIsVisible(false)}
-      />
-      <ContHeader className={scrolled ? "scrolled" : ""}>
-        <div className="inner">
-          <a href="#home" className="logo" onClick={handleLogoClick}>CE.</a>
+      <header className="site-header">
+        <a href="#top" className="site-header__name">
+          Cauê Enrico
+        </a>
 
-          <nav>
-            <a href="#sobre">{t('nav.about')}</a>
-            <a href="#experiencia">{t('nav.experience')}</a>
-            <a href="#capacidades">{t('nav.skills')}</a>
-            <a href="#contato">{t('nav.contact')}</a>
-          </nav>
+        <nav className="site-header__nav" aria-label="Principal">
+          {LINKS.map((link, i) => (
+            <a key={link.href} href={link.href}>
+              <span className="site-header__num">0{i + 1}</span>
+              {t(link.key)}
+            </a>
+          ))}
+        </nav>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-            <LanguageToggle variant="header" />
-            <button className="menuBtn" onClick={() => setMenuIsVisible(!menuIsVisible)}>
-              <List size={22} color="#E8A838" />
-            </button>
-          </div>
+        <div className="site-header__meta">
+          <LocalTime />
+          <LanguageToggle />
+          <button
+            type="button"
+            className="site-header__menu"
+            aria-expanded={open}
+            aria-controls="menu-overlay"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? t("nav.close") : t("nav.menu")}
+          </button>
         </div>
-      </ContHeader>
+      </header>
+
+      <div
+        id="menu-overlay"
+        className={`menu${open ? " is-open" : ""}`}
+        data-lenis-prevent
+        aria-hidden={!open}
+      >
+        <nav>
+          {LINKS.map((link, i) => (
+            <a
+              key={link.href}
+              href={link.href}
+              tabIndex={open ? 0 : -1}
+              style={{ transitionDelay: open ? `${0.08 + i * 0.05}s` : "0s" }}
+              onClick={() => setOpen(false)}
+            >
+              <span>0{i + 1}</span>
+              {t(link.key)}
+            </a>
+          ))}
+        </nav>
+        <div className="menu__foot">
+          <LanguageToggle />
+          <a href="mailto:caueenrico@gmail.com" tabIndex={open ? 0 : -1}>
+            caueenrico@gmail.com
+          </a>
+        </div>
+      </div>
     </>
   );
 }

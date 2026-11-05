@@ -10,6 +10,8 @@ interface LanguageContextValue {
   lang: Lang;
   setLang: (next: Lang) => void;
   locale: Locale;
+  // true once the client resolved the visitor's language; animations wait for it
+  ready: boolean;
 }
 
 export const LanguageContext = createContext<LanguageContextValue | null>(null);
@@ -27,9 +29,11 @@ function readInitialLang(): Lang {
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
   const [lang, setLangState] = useState<Lang>('en');
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     setLangState(readInitialLang());
+    setReady(true);
   }, []);
 
   useEffect(() => {
@@ -57,8 +61,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   );
 
   const value = useMemo<LanguageContextValue>(
-    () => ({ lang, setLang, locale: LOCALES[lang] }),
-    [lang, setLang]
+    () => ({ lang, setLang, locale: LOCALES[lang], ready }),
+    [lang, setLang, ready]
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
